@@ -1,23 +1,27 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
 `DISCIPLINA`
 
-`SEMESTRE`
+`1/2022`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+A crise econômica causada pela pandemia de COVID 19 acelerou o processo de digitalização das empresas. Três fatores importantes levaram a essa mudança: a necessidade de sobrevivência das empresas pré estabelecidas em um mercado diversificado; o atendimento emergencial à demanda que cresceu abruptamente, e a geração de novos negócios para englobar a população que ficou desempregada. Em especial, nesta ultima encontram-se artesãos que dominam muito as técnicas de produção de suas artes, mas sabem pouco, ou não dispõe de recursos e mão de obra para investir em marketing e logística para os seus produtos.
+
+Pensando no benefício desses pequenos empreendedores e convictos de que a exposição do artesanato local tem importante papel cultural, esse projeto visa criar um e-commerce voltado para produtos artesanais com o uso da tecnologia, conectando o artesão e o consumidos, ao mesmo tempo que difunde culturas diversas. Beneficiando assim a comunidade local através de um comércio justo (fairtrade) e sustentável.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Franciele Teixeira Félix
+* Giovanna Maria Elias Coura
+* Guilherme de Souza Araújo
+* Juliane Campos de Araújo
+* Henrique Alexandre Gomes Pinto
+* Thiago Campos de Araújo
 
 ## Orientador
 
-* Nome completo do professor 1
+* Nathalia Assis Valentim
 
 ## Instruções de utilização
 
