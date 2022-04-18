@@ -46,3 +46,9 @@ A tela de resultado de pesquisa mostra ao usuário no conteúdo da pagina a list
 
 ![Exemplo_da_Pagina](img/P%C3%A1gina%20Resultado%20da%20Pesquisa.jpg)
 
+## Página de Avaliação do Produto
+A tela de avaliação permite ao usuário comentar um produto que foi vendido e entregue pelo artesão.
+O produto pode ser avaliado através de uma nota em formato de estrelas que vai de 1 (ruim) a 5 (excelente) estrelas, a avaliação irá determinar uma média de pontuação para o produto interferindo na exposição do mesmo.
+
+![Exemplo_avaliacao](img/P%C3%A1gina%20Avalia%C3%A7%C3%A3o%20Produto.jpg)
+
