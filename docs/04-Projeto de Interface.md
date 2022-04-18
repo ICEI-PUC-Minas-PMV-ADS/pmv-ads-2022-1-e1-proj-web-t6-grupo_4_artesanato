@@ -37,3 +37,12 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 > - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
 > - [Axure](https://www.axure.com/edu) (Licença Educacional)
 > - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+
+## Página de Resultado de Pesquisa
+A tela de resultado de pesquisa mostra ao usuário no conteúdo da pagina a lista de produtos pesquisados pela barra de pesquisa. Ao menu lateral temos barra de pesquisa e um filtro de pesquisa baseado em categorias, material e faixa etária.
+> - Os produtos gerados na lista da pesquisa redirecionam para uma página mais detalhada do produto.
+> - Os produtos gerados na lista da pesquisa podem ser adicionados ao carrinho de compra.
+
+
+![Exemplo_da_Pagina](img/P%C3%A1gina%20Resultado%20da%20Pesquisa.jpg)
+
