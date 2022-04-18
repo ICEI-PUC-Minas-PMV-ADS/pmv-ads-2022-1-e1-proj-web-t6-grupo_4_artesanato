@@ -17,7 +17,7 @@ Pensando no benefício desses pequenos empreendedores e convictos de que a expos
 * Guilherme de Souza Araújo
 * Juliane Campos de Araújo
 * Henrique Alexandre Gomes Pinto
-* Thiago Campos de Araújo
+* Thiago de Medeiros Gregorio
 
 ## Orientador
 
