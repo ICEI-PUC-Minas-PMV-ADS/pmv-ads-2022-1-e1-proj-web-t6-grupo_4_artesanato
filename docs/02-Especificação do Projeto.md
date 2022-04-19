@@ -77,8 +77,8 @@ O escopo funcional do projeto é definido por meio dos requisitos funcionais que
 |RF-02|O site deve apresentar, na página do usuário (cliente) os últimos itens cadastrados e melhores avaliados.|Média|  
 |RF-03|O site deve apresentar, na página do usuário (cliente) produtos mais vendidos.|Baixa|
 |RF-04|O site deve oferecer uma funcionalidade para alteração ou remoção de conta.|Alta|  
-|RF-05|O site deve oferecer uma funcionalidade de filtro-pesquisa para permitir ao usuário (cliente) localizar um produto pelo material, categorias ou faixa etária.|Média|
-|RF-06||O site deve efetuar login de cliente cadastrado em sua página inicial, ou redirecionar usuário para criação de conta.|Alta|
+|RF-05|O site deve oferecer uma funcionalidade de filtro-pesquisa para permitir ao usuário - cliente localizar um produto pelo material, categorias ou faixa etária.|Média|
+|RF-06|O site deve efetuar login de cliente cadastrado em sua página inicial, ou redirecionar usuário para criação de conta.|Alta|
 |RF-07|O site deve permitir ao usuário (vendedor) cadastrar, alterar ou deletar algum produto.|Alta|
 |RF-08|O site deve listar para um cliente todos os produtos cadastrados de um vendedor especifico, através de uma pesquisa.|Baixa|
 |RF-09|O site deve oferecer uma funcionalidade para definir a forma de pagamento.|Alta|
