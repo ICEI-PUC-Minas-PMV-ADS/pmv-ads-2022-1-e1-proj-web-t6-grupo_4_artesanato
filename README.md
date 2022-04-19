@@ -1,8 +1,8 @@
 # E-COMMERCE PARA ARTESÃOS
 
-`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
+`Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de Aplicação Web Front-End`
 
 `1/2022`
 
