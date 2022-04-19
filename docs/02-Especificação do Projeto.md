@@ -55,9 +55,7 @@ A partir da compreensão do dia a dia das personas identificadas para o projeto,
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Andréa Silva        | Expor meus produtos de maneira     |Para melhorar na divulgação dos meus    |
-|                    |simples e de fácil acesso para meus |produtos aumentando o número de clientes|
-|                    | clientes.                          |em potencial                            |
+|Andréa Silva        | Expor meus produtos de maneira simples e de fácil acesso para meus clientes.|Para melhorar na divulgação dos meus produtos aumentando o número de clientes em potencial.|
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
