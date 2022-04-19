@@ -65,61 +65,60 @@ A partir da compreensão do dia a dia das personas identificadas para o projeto,
 |Narayhane Delabrida |Mais uma opção para exposição e venda meus produtos.|Para aumentar as encomendas e a possibilidades de clientes de outras regiões adquirirem os produtos.|
 
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
-
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+O escopo funcional do projeto é definido por meio dos requisitos funcionais que descrevem as possibilidades interação dos usuários, bem como os requisitos não funcionais que descrevem os aspectos que o sistema deverá apresentar de maneira geral. Estes requisitos são apresentados a seguir. 
 
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-01|O site deve oferecer uma funcionalidade de criação de usuário Vendedor (Artesão) ou Cliente (Comprador).|Alta|  
+|RF-02|O site deve apresentar, na página do usuário (cliente) os últimos itens cadastrados e melhores avaliados.|Média|  
+|RF-03|O site deve apresentar, na página do usuário (cliente) produtos mais vendidos.|Baixa|
+|RF-04|O site deve oferecer uma funcionalidade para alteração ou remoção de conta.|Alta|  
+|RF-05|O site deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário (cliente) localizar um produto pelo material, categorias ou faixa etária.|Média|
+|RF-06||O site deve efetuar login de cliente cadastrado em sua página inicial, ou redirecionar usuário para criação de conta.|Alta|
+|RF-07|O site deve permitir ao usuário (vendedor) cadastrar, alterar ou deletar algum produto.|Alta|
+|RF-08|O site deve listar para um cliente todos os produtos cadastrados de um vendedor especifico, através de uma pesquisa.
+|Baixa|
+|RF-09|O site deve oferecer uma funcionalidade para definir a forma de pagamento.|Alta|
+|RF-10|O site deve oferecer uma funcionalidade para definir formas de envio e prazos de entrega dos produtos.|Alta|
+|RF-11|O site deve exibir os comentários registrados juntamente com o produto que foi vendido.|Baixa| 
+|RF-12|O site deve oferecer informações completas de um produto incluindo uma imagem do mesmo.|Alta|
+|RF-13|O site deve oferecer uma funcionalidade de chat entre Vendedor e Cliente.|Baixa|  
+|RF-14|O site deve permitir usuário avaliar e comentar um produto que tenha comprado.|Média|
+|RF-15|O site deve fornecer ao usuário (vendedor), dados do usuário (cliente) que facilitem e agilizem o envio.|Média|  
+|RF-16|O site deve filtrar e pesquisar vendedores em regiões especificas.|Baixa|
+|RF-17|O site deve oferecer uma funcionalidade para o usuário (artesão) consultar seus pedidos e organizar sua agenda. (Formato de calendário)|Baixa  
+|RF-18|O site deve oferecer uma funcionalidade de histórico de compras para os usuários.|Média|
+|RF-19|O site deve oferecer uma funcionalidade para devolução de produtos.|Alta|
+|RF-20|O site deve oferecer uma funcionalidade para personalização do leiaute do usuário (artesão).|Baixa|  
+|RF-21| O site deve exibir um termo de confidenciabilidade de dados para usuário durante a criação da conta respeitando as normas da LGPD.|Alta| 
 
 
 ### Requisitos não Funcionais
 
+A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá atender.
+
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-01|O site deve ser publicado em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku).|Alta|  
+|RNF-02|O site deverá ser responsivo permitindo a visualização em um celular de forma adequada.|Alta|  
+|RNF-03|O site deve ser ágil e de fácil entendimento para os usuários.|Média|
+|RNF-04|O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).|Alta|
+|RNF-05|O site deve receber imagens com qualidade especifica no cadastramento dos produtos do usuário, para não causar lentidão ou mal uso do espaço do servidor.|Alta|  
+|RNF-06|O site deverá ter limite de produtos cadastrados.|Média|  
+|RNF-07|O site deve manter o histórico de compras e pagamentos, por certo período.|Média|  
+|RNF-08|O site deve coletar e tratar dados de acordo com as normas da LGPD (Lei Geral de Proteção de Dados do Brasil). |Alta| 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir. 
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|RE-01|O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 12/06/2022.|
+|RE-02|O aplicativo deve se restringir às tecnologias básicas da Web no Front-end|
+|RE-03|A equipe não pode subcontratar o desenvolvimento do trabalho.|
