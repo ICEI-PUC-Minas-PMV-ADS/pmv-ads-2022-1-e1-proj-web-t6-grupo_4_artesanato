@@ -1,26 +1,37 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
+A definição exata do problema e os pontos mais relevantes a serem tratados neste projeto foi consolidada com a participação dos usuários em um trabalho de imersão feita pelos membros da equipe a partir da observação dos usuários em seu local natural e por meio de entrevistas. Os detalhes levantados nesse processo foram consolidados na forma de personas e histórias de usuários. 
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
+As personas levantadas durante o processo de entendimento do problema são apresentadas a seguir:   
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+# Andréa Silva 
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Idade: 59 
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Ocupação: Artesã, decoradora e professora. Trabalha com artesanato desde 1984 produzindo almofadas decorativas em diversos formatos, futons, travesseiros, capas de colchão e cadeira, tapetes, produtos infantis diversos como: toucas, tiaras, bolas siliconadas, almofadas de amamentação, travesseiros, protetor para cinto de carro, além de trabalhar com reforma de assentos de cadeiras. 
+Aplicativos: WhatsApp, Aplicativos de banco
+Motivações: Inspira-se em produtos mostrados em programas de televisão, uma vez que atraem o interesse das pessoas que assistem. Gosta de andar por lojas e mercados para verificar tendências.  
+Frustrações: Não conseguir aumentar as vendas. Não conseguir promover a divulgação dos produtos online. Atualmente divulga os produtos em loja física e feiras (quando tem). Muitas vezes é necessário ir para Belo Horizonte para conseguir vender certos produtos. 
+Hobbies, História: Cuida de casa, do marido, do cachorro e de sua horta. Gosta de passear no interior, dançar e inventar coisas diferentes, sem desperdiçar nada, pois tudo é transformado. Nascida no interior do Espírito Santo, veio para Ibirité e começou a trabalhar cuidando de crianças, ao mesmo tempo que estudava. Depois fez o curso de Magistério e quando começou a cursar a faculdade, precisou trabalhar com o irmão para pagar a graduação. Aprendeu a desmanchar sofás, costurar e fazer pequenas peças com sobras de tecidos. Depois foi aprimorando as técnicas e vendendo o produzia. 
+
+# Narayhane Delabrida  
+Idade: 29 
+Ocupação: “Sou turismóloga e artesã. Trabalho com consultoria em turismo e macramê.” 
+Aplicativos: “Instagram é o principal, depois uso Facebook, WhatsApp, Canva, Trello. São os de comunicação direta com meus clientes, para criação de conteúdo, planejamento/organização.” 
+Motivações: “Minha principal motivação é o amor pelo que faço, gosto muito, faço com muito carinho“ 
+Frustrações: “As vezes não dar conta de tudo a ponto de fechar a agenda de encomendas. E a desvalorização do artesanato, mas tenho visto uma melhora nos últimos tempos.” 
+Hobbies, História: “O macramê é meu hobby, mesmo sendo o meu trabalho também. Comecei a fazer macramê para diminuir a ansiedade e estresse, com objetivo de ocupar a mente com outras coisas que não fosse só a maternidade no meio de uma pandemia. E hoje mesmo sendo um trabalho sério, com todas as obrigações de um negócio, o ato de tecer ainda é meu hobby.”  
+
+
+# Franciele Félix  
+Idade: 28 
+Ocupação: Engenheira de Materiais, professora de inglês e artesã. Como artesã, faço amigurumis para o nicho materno / infantil.  
+Aplicativos: Instagram, WhatsApp, Aplicativos de bancos, Editores de imagem.  
+Motivações: Vitrine para expor seus produtos. Conseguir oferecer melhores formas de pagamento para o cliente.   Desburocratizar e facilitar a logística de envio e entrega (o site já coleta todos os dados necessários como endereço, CPF, etc)
+Frustrações: Sites pouco profissionais que desvalorizam o produto. Comissões elevadas que geram em torno de 15% a 25% do valor do produto. Sites que exigem fundo branco e não permitem valorizar o produto com o cenário. Não conseguir uma comunicação eficiente com o cliente em caso de personalização do produto. O que pode inclusive fazer o preço variar.  
+Hobbies, História: Ela trabalha de casa e divide o tempo entre cuidar do lar e do trabalho. Domina muito as técnicas de artesanato, mas precisa de ajuda com as demais áreas de venda do seu produto. Como uma pessoa criativa, ela gosta de hobbies que estimulem os seus sentidos: Assistir séries e filmes, se inspirar com os perfis de outros artesãos, viajar, ouvir música.  
 
 ## Histórias de Usuários
 
