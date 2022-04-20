@@ -44,11 +44,25 @@ A tela de resultado de pesquisa mostra ao usuário no conteúdo da pagina a list
 > - Os produtos gerados na lista da pesquisa podem ser adicionados ao carrinho de compra.
 
 
-![Exemplo_da_Pagina](img/P%C3%A1gina%20Resultado%20da%20Pesquisa.jpg)
+![Exemplo_da_Pagina](img/P%C3%A1gina%20pesquisa.png)
 
 ## Página de Avaliação do Produto
 A tela de avaliação permite ao usuário comentar um produto que foi vendido e entregue pelo artesão.
 O produto pode ser avaliado através de uma nota em formato de estrelas que vai de 1 (ruim) a 5 (excelente) estrelas, a avaliação irá determinar uma média de pontuação para o produto interferindo na exposição do mesmo.
 
-![Exemplo_avaliacao](img/P%C3%A1gina%20Avalia%C3%A7%C3%A3o%20Produto.jpg)
+![Exemplo_avaliacao](img/Avalia%C3%A7%C3%A3o%20do%20Produto.png)
+
+## Tela de Login
+
+Na tela de login o usuário poderá ser redirecionado para criação de conta seja ela do artesão ou do cliente, redefinir e recuperar a senha da conta. Entrando com seu login e senha o usuário será redirecionado para a tela principal "Home Page Cliente" ou  "Home Page Artesão".
+
+![Login](img/Tela%20de%20Login.png)
+
+## Página do carrinho de Compras
+
+Na página do carrinho de compras o cliente poderá visualizar seus pedidos salvos na lista de compras, alterar a quantidade de produtos, remover um item de sua lista e também visualizar o endereço de entrega o preço do frete e o valor total de sua compra.
+
+Após finalizar, o usuário clicando no botão "Continuar Compra" ele será redirecionado para a página de métodos de pagamento. 
+
+![carrinho_compras](img/P%C3%A1gina%20carrinho%20de%20Compras.png)
 
