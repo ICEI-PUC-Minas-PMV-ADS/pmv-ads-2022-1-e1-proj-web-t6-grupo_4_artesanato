@@ -1,9 +1,19 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+Para criação do e-commerce para artesãos foi escolhida a metodologia ágil, seguindo o processo do SCRUM adaptado para a natureza da equipe de trabalho e ao resultado entregável com foco na formação técnica e em gestão dos membros que a compõe.
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+Incialmente, foi criado o artefato de "Especificação de requisitos de software" através de sua elicitação partindo de entrevistas com os clientes em potencial. Sua análise, especificação e validação foram atividades adotadas e são atividades constantes no decorrer do projeto levando à atualizações frequentes no _backlog_ das _sprints_.
+
+Os ambientes de trabalhos adotados pela equipe são diversos sendo adotados de acordo com o propósito de cada aplicação. A tabela X apresenta as plataformas e propósitos a que se destinam.
+
+|Ambiente                                            |Plataforma     |Link de acesso   |
+|----------------------------------------------------|---------------|--------------   |
+|Repositório de Código Fonte e Documentos do Projeto |GitHub         |https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_4_artesanato|
+|Projeto de Interface e Wireframes                   |Figma          |https://www.figma.com/file/dtoi7KXOF72EnLxpJm6GAy/Fluxo_usu%C3%A1rio_artes%C3%A3o?node-id=0%3A1|
+|Gerenciamento do Projeto                            |GitHub         |https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_4_artesanato/projects/1|
+|Gerenciamento do Projeto - comunicação e reuniões   |WhatsApp, Teams|https://chat.whatsapp.com/ByoxtpZPTD45nrbTaYSqxG  / encurtador.com.br/ezRU7|
+
 
 ## Controle de Versão
 
@@ -53,6 +63,8 @@ Dessa forma, a equipe foi organizada da seguinte maneira:
 
 As escolhas foram pautadas nas seguintes justificativas: 1) O _Scrum Master_ possui maior conhecimento sobre Desenvolvimento e, portanto, poderá auxiliar melhor o grupo em suas atividades, fornecer os insumos necessários e ter uma visão mais crítica sobre o trabalho que está sendo realizado. 2) O _Product Owner_ escolhido é uma de nossas personas e conhece o perfil do cliente. Portanto, poderá fornecer informações valiosas sobre o _backlog_ do produto e validar as funcionalidades aplicadas. 3) Ao contrário das definições tradicionais to time no SCRUM, todos fazem parte do time de desenvolvimento porque este é um trabalho de caráter formativo em que todos devem aprender e praticar a criação de código e demais atividades atribuidas aos desenvolvedores.
 
+### Processo
+
 Para distribuição de tarefas entre a equipe, foi adotado o método Kanban dentro do GitHub na aba "Projects".
 As seguintes listas foram criadas:
 * _Product Backlog_: Lista que recebe as tarefas a serem trabalhadas e sua descrição de requisitos. Essa lista é sempre atualizada de acordo com revisões de sprints e identificação de novos requisitos.
@@ -63,16 +75,9 @@ As seguintes listas foram criadas:
 * _Locked_: Lista que recebe as tarefas cujo desenvolvedor não pode concluir a atividade por algum motivo. Nela, a tarefa é incorporada juntamente com um comentário do que a está impedindo de ser realizada.
 
 A Figura X é um _ScreenShot_ da tela em que o método _Kanban_ é aplicado dentro do _GitHub_.
-![Figura X - Tela do Kanban utilizada pelo grupo]()
-### Processo
+![Figura X - Tela do Kanban utilizada pelo grupo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_4_artesanato/blob/3c652ec0fe743a825a281e2724244af186648699/docs/Kanban.png)
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Ainda dentro do processo do SCRUM, o planejamento da _Sprint_ é feita semanalmente em reunião realizada no através do _Teams_, a comunicação diária (_Daily_) é feita por aplicativo de mensagens (_WhatsApp_), e a revisão da Sprint também é feita semanalmente através do _Teams_. Além disso, semanalmente temos a oportunidade de realizar a revisão da _Sprint_ em reuniões com a professora Nathália.
 
 ### Ferramentas
 
