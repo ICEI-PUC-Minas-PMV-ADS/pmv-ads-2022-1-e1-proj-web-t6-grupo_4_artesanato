@@ -36,6 +36,16 @@ Com base na estrutura padrão, o bloco de conteúdo traz os produtos cadastrados
 
 ![Home Page Artesão](Home_Page_Artesão.png)
 
+**Tela - Home Page do Cliente**
+
+Tela - Home Page do Cliente
+A tela mostra a página do cliente, após a criação da conta e já traz junto ao menu, o nome da pessoa cadastrada.
+Com base na estrutura padrão, o bloco de conteúdo traz as seguintes categorias de produtos: melhor avaliados, mais vendidos e últimos cadastrados, sendo que a busca por esses tópicos acontece através do uso da barra de rolagem na lateral direita. Os produtos de cada categoria apresentados na tela são acompanhados pela descrição, resumo de avaliações e preço,  bem como os botões de setas laterais para busca. Ainda no bloco de conteúdo constam mais dois elementos:
+> - A opção de procurar um determinado item através do preenchimento do campo pelo nome do produto ou a descrição, e a busca é realizada ao clicar no botão da lupa;
+> - A opção de ordenar os itens disponíveis pelos mais vendidos, melhor avaliados e últimos cadastrados. O site apresenta as opções de seleção ao clicar na seta para baixo.
+O bloco da barra lateral traz as seguintes opções: alteração dos dados cadastrais do cliente, os pedidos realizados e o histórico de compras.
+
+![Home Page Cliente](Home_Page_Cliente.png)
 
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
