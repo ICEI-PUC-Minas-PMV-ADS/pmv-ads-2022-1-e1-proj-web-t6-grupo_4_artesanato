@@ -59,7 +59,8 @@ Dessa forma, a equipe foi organizada da seguinte maneira:
   - Giovanna Maria Elias Coura
   - Guilherme de Souza Araújo
   - Henrique Alexandre Gomes Pinto
-  - Thiago Campos de Araújo
+  - Juliane Campos de Araújo
+  - Thiago de Medeiros Gregório
 
 As escolhas foram pautadas nas seguintes justificativas: 1) O _Scrum Master_ possui maior conhecimento sobre Desenvolvimento e, portanto, poderá auxiliar melhor o grupo em suas atividades, fornecer os insumos necessários e ter uma visão mais crítica sobre o trabalho que está sendo realizado. 2) O _Product Owner_ escolhido é uma de nossas personas e conhece o perfil do cliente. Portanto, poderá fornecer informações valiosas sobre o _backlog_ do produto e validar as funcionalidades aplicadas. 3) Ao contrário das definições tradicionais to time no SCRUM, todos fazem parte do time de desenvolvimento porque este é um trabalho de caráter formativo em que todos devem aprender e praticar a criação de código e demais atividades atribuidas aos desenvolvedores.
 
