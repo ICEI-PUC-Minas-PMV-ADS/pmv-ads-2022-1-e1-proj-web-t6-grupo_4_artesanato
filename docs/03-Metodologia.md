@@ -39,12 +39,21 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+Foi escolhida a metodologia ágil para a execução do projeto, tendo como base o SCRUM para definição do processo de desenvolvimento, recebendo as devidas adaptações à natureza e objetivos desse trabalho.
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+Dessa forma, a equipe foi organizada da seguinte maneira:
+* Scrum Master: Henrique Alexandre Gomes Pinto
+* Product Owner: Franciele Teixeira Félix
+* Equipe de desenvolvimento:
+  - Franciele Teixeira Félix
+  - Giovanna Maria Elias Coura
+  - Guilherme de Souza Araújo
+  - Henrique Alexandre Gomes Pinto
+  - Thiago Campos de Araújo
+
+As escolhas foram pautadas nas seguintes justificativas: 1) Nosso Scrum Master possui maior conhecimento sobre Desenvolvimento e, portanto, poderá auxiliar melhor o grupo em suas atividades, fornecer os insumos necessários e ter uma visão mais crítica sobre o trabalho que está sendo realizado. 2) O Product Owner escolhido é uma de nossas personas e conhece o perfil do cliente. Portanto, poderá fornecer informações valiosas sobre o backlog do produto e validar as funcionalidades aplicadas. 3) Ao contrário das definições tradicionais to time no CRUM, todos fazem parte do time de desenvolvimento porque este é um trabalho de caráter formativo em que todos devem aprender e praticar a criação de código e demais atividades atribuidas aos desenvolvedores.
+
+Para distribuição de tarefas entre a equipe, foi adotado o método Kanban dentro do próprio GitHub
 
 ### Processo
 
