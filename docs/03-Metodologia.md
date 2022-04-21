@@ -42,8 +42,8 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 Foi escolhida a metodologia ágil para a execução do projeto, tendo como base o SCRUM para definição do processo de desenvolvimento, recebendo as devidas adaptações à natureza e objetivos desse trabalho.
 
 Dessa forma, a equipe foi organizada da seguinte maneira:
-* Scrum Master: Henrique Alexandre Gomes Pinto
-* Product Owner: Franciele Teixeira Félix
+* _Scrum Master_: Henrique Alexandre Gomes Pinto
+* _Product Owner_: Franciele Teixeira Félix
 * Equipe de desenvolvimento:
   - Franciele Teixeira Félix
   - Giovanna Maria Elias Coura
@@ -51,10 +51,19 @@ Dessa forma, a equipe foi organizada da seguinte maneira:
   - Henrique Alexandre Gomes Pinto
   - Thiago Campos de Araújo
 
-As escolhas foram pautadas nas seguintes justificativas: 1) Nosso Scrum Master possui maior conhecimento sobre Desenvolvimento e, portanto, poderá auxiliar melhor o grupo em suas atividades, fornecer os insumos necessários e ter uma visão mais crítica sobre o trabalho que está sendo realizado. 2) O Product Owner escolhido é uma de nossas personas e conhece o perfil do cliente. Portanto, poderá fornecer informações valiosas sobre o backlog do produto e validar as funcionalidades aplicadas. 3) Ao contrário das definições tradicionais to time no CRUM, todos fazem parte do time de desenvolvimento porque este é um trabalho de caráter formativo em que todos devem aprender e praticar a criação de código e demais atividades atribuidas aos desenvolvedores.
+As escolhas foram pautadas nas seguintes justificativas: 1) O _Scrum Master_ possui maior conhecimento sobre Desenvolvimento e, portanto, poderá auxiliar melhor o grupo em suas atividades, fornecer os insumos necessários e ter uma visão mais crítica sobre o trabalho que está sendo realizado. 2) O _Product Owner_ escolhido é uma de nossas personas e conhece o perfil do cliente. Portanto, poderá fornecer informações valiosas sobre o _backlog_ do produto e validar as funcionalidades aplicadas. 3) Ao contrário das definições tradicionais to time no SCRUM, todos fazem parte do time de desenvolvimento porque este é um trabalho de caráter formativo em que todos devem aprender e praticar a criação de código e demais atividades atribuidas aos desenvolvedores.
 
-Para distribuição de tarefas entre a equipe, foi adotado o método Kanban dentro do próprio GitHub
+Para distribuição de tarefas entre a equipe, foi adotado o método Kanban dentro do GitHub na aba "Projects".
+As seguintes listas foram criadas:
+* _Product Backlog_: Lista que recebe as tarefas a serem trabalhadas e sua descrição de requisitos. Essa lista é sempre atualizada de acordo com revisões de sprints e identificação de novos requisitos.
+* _To do_: Lista que recebe o _Sprint Backlog_ de cada _Sprint_. Nela, há como o time atribuir para si cada uma das tarefas.
+* _In progress_: Lista em que os desenvolvedores posicionam as tarefas que estão em andamento.
+* _Review_: Lista que recebe o teste de qualidade. Ao final de cada _Sprint_ o trabalho feito é revisto e o grupo decide se ele se enquadra como "Feito" de acordo com o que foi definido no começo da _Sprint_.
+* _Done_: Lista que recebe as tarefas que foram concluídas, revistas e classificadas como feitas.
+* _Locked_: Lista que recebe as tarefas cujo desenvolvedor não pode concluir a atividade por algum motivo. Nela, a tarefa é incorporada juntamente com um comentário do que a está impedindo de ser realizada.
 
+A Figura X é um _ScreenShot_ da tela em que o método _Kanban_ é aplicado dentro do _GitHub_.
+![Figura X - Tela do Kanban utilizada pelo grupo]()
 ### Processo
 
 Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
