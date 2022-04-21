@@ -1,8 +1,8 @@
 # E-COMMERCE PARA ARTESÃOS
 
-`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
+`Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de Aplicação Web Front-End`
 
 `1/2022`
 
@@ -17,7 +17,7 @@ Pensando no benefício desses pequenos empreendedores e convictos de que a expos
 * Guilherme de Souza Araújo
 * Juliane Campos de Araújo
 * Henrique Alexandre Gomes Pinto
-* Thiago Campos de Araújo
+* Thiago de Medeiros Gregorio
 
 ## Orientador
 
