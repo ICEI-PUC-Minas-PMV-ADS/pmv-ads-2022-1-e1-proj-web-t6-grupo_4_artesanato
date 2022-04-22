@@ -1,4 +1,3 @@
-
 # Metodologia
 
 Para criação do e-commerce para artesãos foi escolhida a metodologia ágil, seguindo o processo do SCRUM adaptado para a natureza da equipe de trabalho e ao resultado entregável com foco na formação técnica e em gestão dos membros que a compõe.
@@ -97,5 +96,4 @@ necessidades da nossa solução.
 Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
  
 > **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+> - [Slack](https://slack.com/
