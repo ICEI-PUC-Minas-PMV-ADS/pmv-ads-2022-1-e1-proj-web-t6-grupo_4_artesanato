@@ -1,33 +1,70 @@
 
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+As telas a serem desenvolvidas e a interação entre elas foram projetadas utilizando o _Figma_. Estas estão apresentadas abaixo em imagens e textos explicativos de como atendem os requisitos do sistema para satisfazer as histórias de usuário elicitadas ao começo desse projeto.
 
 ## User Flow
 
-![Exemplo de UserFlow](img/userflow.jpg)
+O Fluxo de usuário (_User Flow_) para mapear todas as telas do site e traçar os possíveis caminhos de ações de cliente final (comprador) e artesão (vendedor) dentro da plataforma de e-commerce formam o diagrama abaixo que é apresentado na Figura X. A imagem abaixo também pode ser consultada através do link: https://www.figma.com/file/dtoi7KXOF72EnLxpJm6GAy/Fluxo_usu%C3%A1rio_artes%C3%A3o?node-id=0%3A1 onde é possível ampliar para visualizar melhor o fluxo. Cada uma das telas será, no entanto, apresentada posteriormente em detalhes.
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
-
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-Segue o escopo do fluxograma de usuário, foi criado de forma simples com o objetivo de definir as funcionalidades e as páginas a serem criadas:
-> - [Fluxo do usuário - Figma] (https://www.figma.com/file/dtoi7KXOF72EnLxpJm6GAy/Fluxo_usu%C3%A1rio_artes%C3%A3o?node-id=0%3A1)
+##### Figura X: Fluxo de usuário para o e-commerce de artesãos
+![Fluxo do usuário - Figma](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_4_artesanato/blob/5c7a2f872d8d99450de970dab4d1eeb08ca32ca3/docs/img/Fluxo%20de%20usu%C3%A1rio.png)
+Fonte: dos autores.
 
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+Conforme o fluxo de telas apresentado anteriormente, os _wireframes_ de cada uma das telas a serem desenvolvidas no sistema são apresentadas a seguir:
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+### Login
 
-## Página de Resultado de Pesquisa
+Nessa tela é apresentada a opção de realizar login através do e-mail de usuário e senha previamente cadastrados no sistema, ou também através das contas de Facebook e Google. Caso o login ou senha estejam incorretos, o sistema responderá com uma mensagem de erro e solicitando que as informações sejam redigitadas. Nesse ambiente o usuário também poderá redefinir e recuperar a senha da conta, e aqueles não cadastrados poderão se cadastrar clicando do botão "criar nova conta".
+
+Entrando com os dados cadastrais corretamente, o usuário redirecionado para a tela principal "Home Page Cliente" ou  "Home Page Artesão".
+
+##### Figura X: Tela de Login
+![Fluxo do usuário - Figma](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_4_artesanato/blob/5c7a2f872d8d99450de970dab4d1eeb08ca32ca3/docs/img/Tela%20de%20Login.png)
+Fonte: dos autores
+
+
+### Cadastro de cliente e de artesão
+
+Ambas as telas são apresentadas abaixo e são semelhantes em muitos aspectos. Nela é possível escolher um nome de usuário que será aceito caso o mesmo ainda não se encontre cadastrado na base de dados. O e-mail e a senha também deverão ser informados. Para cadastro da senha haverão critérios a serem seguidos que estão claros na tela e a mesma só será aceita caso tais regras sejam seguidas. Ambos devem clicar no botão "Cadastrar" para que o cadastro seja efetuado e o usuário seja redirecionado para suas _homepages_. Os artesãos, ao diferente dos compradores, receberão posteriormente em seu e-mail as regras legais e de boas práticas que regulamentam o comércio eletrônico. Ao se cadastrarem, eles concordam que somente disponibilizarão à venda produtos que obedeçam as diretrizes que receberão via e-mail. Seguem ambas as páginas apresentadas nas figuras X e X.
+
+##### Figura X: Cadastro de usuários (compradores) no e-commerce
+![Cadastro de Cliente](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_4_artesanato/blob/5c7a2f872d8d99450de970dab4d1eeb08ca32ca3/docs/img/Cadastro%20do%20Cliente.png)
+Fonte: dos autores.
+
+##### Figura X: Cadastro de artesãos (vendedores) no e-commerce
+![Cadastro de Vendedor](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_4_artesanato/blob/5c7a2f872d8d99450de970dab4d1eeb08ca32ca3/docs/img/Cadastro%20Artes%C3%A3o.png)
+Fonte: dos autores
+
+
+### Home Page do Artesão
+
+A tela mostra a página do artesão após a criação da conta e já traz junto ao menu, o nome da pessoa cadastrada.
+Com base na estrutura padrão, o bloco de conteúdo traz os produtos cadastrados pelo artesão com a especificação completa, o preço e as avaliações postadas pelos clientes que adquiriram o produto. Nesse mesmo bloco consta também um campo de busca para facilitar a identificação de um produto específico, bem como a opção da barra de rolagem à direita. O bloco da barra lateral traz dois elementos distintos:
+> - As opções de alterações dos dados cadastrais do artesão;
+> - As opções necessárias para o cadastro, alteração e remoção dos produtos, a agenda, o histórico de vendas e o contato dos clientes para o envio das mercadorias.
+
+##### Figura X: Homepage do artesão
+![Home Page Artesão](Home_Page_Artesão.png)
+Fonte: dos autores
+
+
+### Home Page do Cliente
+
+A tela mostra a página do cliente, após a criação da conta e já traz junto ao menu, o nome da pessoa cadastrada.
+Com base na estrutura padrão, o bloco de conteúdo traz as seguintes categorias de produtos: melhor avaliados, mais vendidos e últimos cadastrados, sendo que a busca por esses tópicos acontece através do uso da barra de rolagem na lateral direita. Os produtos de cada categoria apresentados na tela são acompanhados pela descrição, resumo de avaliações e preço,  bem como os botões de setas laterais para busca. Ainda no bloco de conteúdo constam mais dois elementos:
+> - A opção de procurar um determinado item através do preenchimento do campo pelo nome do produto ou a descrição, e a busca é realizada ao clicar no botão da lupa;
+> - A opção de ordenar os itens disponíveis pelos mais vendidos, melhor avaliados e últimos cadastrados. O site apresenta as opções de seleção ao clicar na seta para baixo.
+O bloco da barra lateral traz as seguintes opções: alteração dos dados cadastrais do cliente, os pedidos realizados e o histórico de compras.
+
+##### Figura X: Homepage do cliente
+![Home Page Cliente](Home_Page_Cliente.png)
+Fonte: dos autores
+
+### Página de Resultado de Pesquisa
 A tela de resultado de pesquisa mostra ao usuário no conteúdo da pagina a lista de produtos pesquisados pela barra de pesquisa. Ao menu lateral temos barra de pesquisa e um filtro de pesquisa baseado em categorias, material e faixa etária.
 > - Os produtos gerados na lista da pesquisa redirecionam para uma página mais detalhada do produto.
 > - Os produtos gerados na lista da pesquisa podem ser adicionados ao carrinho de compra.
@@ -35,53 +72,16 @@ A tela de resultado de pesquisa mostra ao usuário no conteúdo da pagina a list
 
 ![Exemplo_da_Pagina](img/P%C3%A1gina%20pesquisa.png)
 
-## Página de Avaliação do Produto
+### Página de Avaliação do Produto
 A tela de avaliação permite ao usuário comentar um produto que foi vendido e entregue pelo artesão.
 O produto pode ser avaliado através de uma nota em formato de estrelas que vai de 1 (ruim) a 5 (excelente) estrelas, a avaliação irá determinar uma média de pontuação para o produto interferindo na exposição do mesmo.
 
 ![Exemplo_avaliacao](img/Avalia%C3%A7%C3%A3o%20do%20Produto.png)
 
-## Tela de Login
-
-Na tela de login o usuário poderá ser redirecionado para criação de conta seja ela do artesão ou do cliente, redefinir e recuperar a senha da conta. Entrando com seu login e senha o usuário será redirecionado para a tela principal "Home Page Cliente" ou  "Home Page Artesão".
-
-![Login](img/Tela%20de%20Login.png)
-
-## Página do carrinho de Compras
+### Página do carrinho de Compras
 
 Na página do carrinho de compras o cliente poderá visualizar seus pedidos salvos na lista de compras, alterar a quantidade de produtos, remover um item de sua lista e também visualizar o endereço de entrega o preço do frete e o valor total de sua compra.
 
 Após finalizar, o usuário clicando no botão "Continuar Compra" ele será redirecionado para a página de métodos de pagamento. 
 
 ![carrinho_compras](img/P%C3%A1gina%20carrinho%20de%20Compras.png)
-
- 
-**Tela - Home Page do Artesão**
-
-A tela mostra a página do artesão após a criação da conta e já traz junto ao menu, o nome da pessoa cadastrada.
-Com base na estrutura padrão, o bloco de conteúdo traz os produtos cadastrados pelo artesão com a especificação completa, o preço e as avaliações postadas pelos clientes que adquiriram o produto. Nesse mesmo bloco consta também um campo de busca para facilitar a identificação de um produto específico, bem como a opção da barra de rolagem à direita. O bloco da barra lateral traz dois elementos distintos:
-> - As opções de alterações dos dados cadastrais do artesão;
-> - As opções necessárias para o cadastro, alteração e remoção dos produtos, a agenda, o histórico de vendas e o contato dos clientes para o envio das mercadorias.
-
-![Home Page Artesão](Home_Page_Artesão.png)
-
-**Tela - Home Page do Cliente**
-
-Tela - Home Page do Cliente
-A tela mostra a página do cliente, após a criação da conta e já traz junto ao menu, o nome da pessoa cadastrada.
-Com base na estrutura padrão, o bloco de conteúdo traz as seguintes categorias de produtos: melhor avaliados, mais vendidos e últimos cadastrados, sendo que a busca por esses tópicos acontece através do uso da barra de rolagem na lateral direita. Os produtos de cada categoria apresentados na tela são acompanhados pela descrição, resumo de avaliações e preço,  bem como os botões de setas laterais para busca. Ainda no bloco de conteúdo constam mais dois elementos:
-> - A opção de procurar um determinado item através do preenchimento do campo pelo nome do produto ou a descrição, e a busca é realizada ao clicar no botão da lupa;
-> - A opção de ordenar os itens disponíveis pelos mais vendidos, melhor avaliados e últimos cadastrados. O site apresenta as opções de seleção ao clicar na seta para baixo.
-O bloco da barra lateral traz as seguintes opções: alteração dos dados cadastrais do cliente, os pedidos realizados e o histórico de compras.
-
-![Home Page Cliente](Home_Page_Cliente.png)
-
-
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
