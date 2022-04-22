@@ -18,9 +18,9 @@ Conforme o fluxo de telas apresentado anteriormente, os _wireframes_ de cada uma
 
 ### Login
 
-Nessa tela é apresentada a opção de realizar login através do e-mail de usuário e senha previamente cadastrados no sistema, ou também através das contas de Facebook e Google. Caso o login ou senha estejam incorretos, o sistema responderá com uma mensagem de erro e solicitando que as informações sejam redigitadas. Nesse ambiente o usuário também poderá redefinir e recuperar a senha da conta, e aqueles não cadastrados poderão se cadastrar clicando do botão "criar nova conta".
+Nessa tela é apresentada a opção de realizar login através do e-mail ou nome de usuário e senha previamente cadastrados no sistema, ou também através das contas de Facebook e Google. Caso o login ou senha estejam incorretos, o sistema responderá com uma mensagem de erro e solicitará que as informações sejam redigitadas. Nessa tela o usuário também poderá optar por recuperar a senha da conta, e aqueles não cadastrados poderão se cadastrar clicando no botão "criar nova conta".
 
-Entrando com os dados cadastrais corretamente, o usuário redirecionado para a tela principal "Home Page Cliente" ou  "Home Page Artesão".
+Entrando com os dados cadastrais corretamente, o usuário redirecionado para a tela principal "Home Page Cliente" ou "Home Page Artesão"
 
 ##### Figura X: Tela de Login
 ![Fluxo do usuário - Figma](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_4_artesanato/blob/5c7a2f872d8d99450de970dab4d1eeb08ca32ca3/docs/img/Tela%20de%20Login.png)
