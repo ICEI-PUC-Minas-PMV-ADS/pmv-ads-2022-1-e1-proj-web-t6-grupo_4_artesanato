@@ -26,6 +26,35 @@ Segue o escopo do fluxograma de usuário, foi criado de forma simples com o obje
 ![Exemplo de Wireframe](img/wireframe-example.png)
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+
+## Página de Resultado de Pesquisa
+A tela de resultado de pesquisa mostra ao usuário no conteúdo da pagina a lista de produtos pesquisados pela barra de pesquisa. Ao menu lateral temos barra de pesquisa e um filtro de pesquisa baseado em categorias, material e faixa etária.
+> - Os produtos gerados na lista da pesquisa redirecionam para uma página mais detalhada do produto.
+> - Os produtos gerados na lista da pesquisa podem ser adicionados ao carrinho de compra.
+
+
+![Exemplo_da_Pagina](img/P%C3%A1gina%20pesquisa.png)
+
+## Página de Avaliação do Produto
+A tela de avaliação permite ao usuário comentar um produto que foi vendido e entregue pelo artesão.
+O produto pode ser avaliado através de uma nota em formato de estrelas que vai de 1 (ruim) a 5 (excelente) estrelas, a avaliação irá determinar uma média de pontuação para o produto interferindo na exposição do mesmo.
+
+![Exemplo_avaliacao](img/Avalia%C3%A7%C3%A3o%20do%20Produto.png)
+
+## Tela de Login
+
+Na tela de login o usuário poderá ser redirecionado para criação de conta seja ela do artesão ou do cliente, redefinir e recuperar a senha da conta. Entrando com seu login e senha o usuário será redirecionado para a tela principal "Home Page Cliente" ou  "Home Page Artesão".
+
+![Login](img/Tela%20de%20Login.png)
+
+## Página do carrinho de Compras
+
+Na página do carrinho de compras o cliente poderá visualizar seus pedidos salvos na lista de compras, alterar a quantidade de produtos, remover um item de sua lista e também visualizar o endereço de entrega o preço do frete e o valor total de sua compra.
+
+Após finalizar, o usuário clicando no botão "Continuar Compra" ele será redirecionado para a página de métodos de pagamento. 
+
+![carrinho_compras](img/P%C3%A1gina%20carrinho%20de%20Compras.png)
+
  
 **Tela - Home Page do Artesão**
 
@@ -46,6 +75,7 @@ Com base na estrutura padrão, o bloco de conteúdo traz as seguintes categorias
 O bloco da barra lateral traz as seguintes opções: alteração dos dados cadastrais do cliente, os pedidos realizados e o histórico de compras.
 
 ![Home Page Cliente](Home_Page_Cliente.png)
+
 
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
