@@ -44,8 +44,8 @@ Fonte: dos autores
 
 A tela mostra a página do artesão após a criação da conta e já traz junto ao menu, o nome da pessoa cadastrada.
 Com base na estrutura padrão, o bloco de conteúdo traz os produtos cadastrados pelo artesão com a especificação completa, o preço e as avaliações postadas pelos clientes que adquiriram o produto. Nesse mesmo bloco consta também um campo de busca para facilitar a identificação de um produto específico, bem como a opção da barra de rolagem à direita. O bloco da barra lateral traz dois elementos distintos:
-> - As opções de alterações dos dados cadastrais do artesão;
-> - As opções necessárias para o cadastro, alteração e remoção dos produtos, a agenda, o histórico de vendas e o contato dos clientes para o envio das mercadorias.
+- As opções de alterações dos dados cadastrais do artesão;
+- As opções necessárias para o cadastro, alteração e remoção dos produtos, a agenda, o histórico de vendas e o contato dos clientes para o envio das mercadorias.
 
 ##### Figura X: Homepage do artesão
 ![Home Page Artesão](Home_Page_Artesão.png)
@@ -56,8 +56,8 @@ Fonte: dos autores
 
 A tela mostra a página do cliente, após a criação da conta e já traz junto ao menu, o nome da pessoa cadastrada.
 Com base na estrutura padrão, o bloco de conteúdo traz as seguintes categorias de produtos: melhor avaliados, mais vendidos e últimos cadastrados, sendo que a busca por esses tópicos acontece através do uso da barra de rolagem na lateral direita. Os produtos de cada categoria apresentados na tela são acompanhados pela descrição, resumo de avaliações e preço,  bem como os botões de setas laterais para busca. Ainda no bloco de conteúdo constam mais dois elementos:
-> - A opção de procurar um determinado item através do preenchimento do campo pelo nome do produto ou a descrição, e a busca é realizada ao clicar no botão da lupa;
-> - A opção de ordenar os itens disponíveis pelos mais vendidos, melhor avaliados e últimos cadastrados. O site apresenta as opções de seleção ao clicar na seta para baixo.
+- A opção de procurar um determinado item através do preenchimento do campo pelo nome do produto ou a descrição, e a busca é realizada ao clicar no botão da lupa;
+- A opção de ordenar os itens disponíveis pelos mais vendidos, melhor avaliados e últimos cadastrados. O site apresenta as opções de seleção ao clicar na seta para baixo.
 O bloco da barra lateral traz as seguintes opções: alteração dos dados cadastrais do cliente, os pedidos realizados e o histórico de compras.
 
 ##### Figura X: Homepage do cliente
@@ -66,17 +66,20 @@ Fonte: dos autores
 
 ### Página de Resultado de Pesquisa
 A tela de resultado de pesquisa mostra ao usuário no conteúdo da pagina a lista de produtos pesquisados pela barra de pesquisa. Ao menu lateral temos barra de pesquisa e um filtro de pesquisa baseado em categorias, material e faixa etária.
-> - Os produtos gerados na lista da pesquisa redirecionam para uma página mais detalhada do produto.
-> - Os produtos gerados na lista da pesquisa podem ser adicionados ao carrinho de compra.
+- Os produtos gerados na lista da pesquisa redirecionam para uma página mais detalhada do produto.
+- Os produtos gerados na lista da pesquisa podem ser adicionados ao carrinho de compra.
 
-
+##### Figura X: Tela de pesquisa e resultados de pesquisa
 ![Exemplo_da_Pagina](img/P%C3%A1gina%20pesquisa.png)
+Fonte: dos autores.
 
 ### Página de Avaliação do Produto
 A tela de avaliação permite ao usuário comentar um produto que foi vendido e entregue pelo artesão.
-O produto pode ser avaliado através de uma nota em formato de estrelas que vai de 1 (ruim) a 5 (excelente) estrelas, a avaliação irá determinar uma média de pontuação para o produto interferindo na exposição do mesmo.
+O produto pode ser avaliado através de uma nota em formato de estrelas que vai de 1 (ruim) a 5 (excelente) estrelas, a avaliação irá determinar uma média de pontuação para o produto interferindo na exposição do mesmo. Também será possível que ele escreva um breve comentário sobre suas impressões.
 
+##### Foto X: Tela de avaliação do produto
 ![Exemplo_avaliacao](img/Avalia%C3%A7%C3%A3o%20do%20Produto.png)
+Fonte: dos autores.
 
 ### Página do carrinho de Compras
 
@@ -84,4 +87,43 @@ Na página do carrinho de compras o cliente poderá visualizar seus pedidos salv
 
 Após finalizar, o usuário clicando no botão "Continuar Compra" ele será redirecionado para a página de métodos de pagamento. 
 
+##### Tela do carrinho de compras
 ![carrinho_compras](img/P%C3%A1gina%20carrinho%20de%20Compras.png)
+Fonte: dos autores.
+
+### Chat
+A janela de chat possui 3 botões, o de minimizar e o de fechar a janela, e o de enviar mensagem. Nela, o usuário pode entrar em contato com a equipe de suporte para esclarecer dúvidas e buscar por informações. Inicialmente há uma mensagem de boas vindas, e um campo para que o usuário escreva a sua solicitação.
+
+##### Janela de Chat
+![Janela de Chat](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_4_artesanato/blob/5fcda48208bde47a93de347320a499d3c10f8aea/docs/img/Chat.png)
+Fonte: dos autores.
+
+### Alteração de Dados Cadastrais
+##### Figura X: Tela para alteração de dados cadastrais
+![Alterar dados cadastrais]()
+Fonte: dos autores
+
+### Histórico de Compras
+##### Figura X: Tela do histórico de compras
+![Histórico de compras](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_4_artesanato/blob/5fcda48208bde47a93de347320a499d3c10f8aea/docs/img/Hist%C3%B3rico%20de%20Pedidos.png)
+Fonte: dos autores
+
+### Pagamento
+##### Figura X: Tela de pagamento
+![Pagamento](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_4_artesanato/blob/5fcda48208bde47a93de347320a499d3c10f8aea/docs/img/Tela%20de%20pagamento.png)
+Fonte: dos autores
+
+### Exibição do Produto
+##### Figura X: Tela de exibição do produto
+![Exibição do produto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_4_artesanato/blob/5fcda48208bde47a93de347320a499d3c10f8aea/docs/img/P%C3%A1gina%20do%20Produto.png)
+Fonte: dos autores
+
+### Agenda
+##### Figura X: Tela de agenda
+![Agenda]()
+Fonte: dos autores
+
+### Histórico do vendedor
+##### Figura X: Tela de histórico do vendedor
+![Histórico do vendedor](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_4_artesanato/blob/5fcda48208bde47a93de347320a499d3c10f8aea/docs/img/Hist%C3%B3rico%20de%20Vendas.png)
+Fonte: dos autores
