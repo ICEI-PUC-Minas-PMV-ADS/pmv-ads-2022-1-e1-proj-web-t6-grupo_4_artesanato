@@ -131,12 +131,18 @@ Fonte: dos autores
 
 
 ### Agenda
+A agenda (Figura 14) será um ambiente que facilite o controle do usuário sobre os produtos vendidos. O site, como algumas outras plataformas de e-commerce, não disponibilizará sistema integrado de envio, lojística própria. No entanto, disponibilizará na agenda o dia em que a compra foi feita e o dia máximo em que ela deve ser enviada pelo correio para o cliente que comprou a mercadoria.
+Dessa forma, essa será uma ferramenta que auxiliará no controle de atividades do artesão e na gestão de atividades internas ao seu negócio.
+
 ##### Figura 14: Tela de agenda
 ![Agenda](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_4_artesanato/blob/e42fd6ea6497c166ac35edc119bdbfb7e55fcbd7/docs/img/Agenda.png)
 Fonte: dos autores
 
 ### Histórico do vendedor
+
 ##### Figura 15: Tela de histórico do vendedor
+A tela de histórico do vendedor conterá o histórico de vendas organizado do mais recente para o mais antigo, bem como estatísticas de seu desempenho dentro da plataforma.
+
 ![Histórico do vendedor](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_4_artesanato/blob/5fcda48208bde47a93de347320a499d3c10f8aea/docs/img/Hist%C3%B3rico%20de%20Vendas.png)
 Fonte: dos autores
 
