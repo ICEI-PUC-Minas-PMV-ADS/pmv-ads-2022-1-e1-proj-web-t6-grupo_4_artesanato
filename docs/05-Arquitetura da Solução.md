@@ -1,19 +1,13 @@
 # Arquitetura da Solução
-
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
-
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+Os detalhes sobre os componentes que farão parte da solução e o ambiente de hospedagem da mesma escontram-se descritos a seguir.
 
 ## Diagrama de componentes
 
-Diagrama que permite a modelagem física de um sistema, através da visão dos seus componentes e relacionamentos entre os mesmos.
+Os componentes que fazem parte da solução proposta nesse projeto encontram-se modelados na Figura 1. Nela é possível notar as tecnologias que serão utilizadas para a interface usuário/máquina e para código, armazenamento de dados e hospedagem para que uma resposta apropriada às requisições do usuário sejam fornecidas.
 
-Exemplo: 
-
-Os componentes que fazem parte da solução são apresentados na Figura XX.
-
+##### Figura 1: Diagrama dos componentes do sistema
 ![Diagrama de Componentes](img/Diagrama%20de%20Componentes.png)
-<center>Figura XX - Arquitetura da Solução</center>
+<center>Fonte: dos autores.</center>
 
 A solução implementada conta com os seguintes módulos:
 - **Navegador** - Interface básica do sistema  
@@ -23,52 +17,29 @@ A solução implementada conta com os seguintes módulos:
      - **Comentários** - registro de opiniões e avaliação dos usuários sobre os produtos.
      - **Histórico de vendas** - registro de vendas efetuadas concluidas ou não.
      - **Registro do Usuário** - registro de informações e dados para login do usuário cliente e artesão.
- - **Hospedagem** - local na Internet onde as páginas são mantidas e acessadas pelo navegador. 
+ - **Hospedagem** - A hospedagem será feita na plataforma do Heroku, as páginas serão mantidas e acessadas pelo navegador. A URL do projeto e a submissão do mesmo (_push_) via git para o repositório será feita nas etapas posteriores do projeto.
 
+Seguindos os componentes do sistema apresentados acima, o casos de uso dos usuários ponta a ponta seguirão o fluxo descrito abaixo: 
 
-Inclua um diagrama da solução e descreva os módulos e as tecnologias que fazem parte da solução. Discorra sobre o diagrama.
+Assim que o usuário entra na plataforma, ele é apresentado à tela inicial de login onde há também a possibilidade de criar uma nova conta, cadastrando uma conta de cliente ou artesão. Nessa etapa os repositório local de registro de usuário deverá ser acessado seja para incluir um novo cadastro ou consultar um cadastro já feito para login. Após login, o usuário é redirecionado para a home page do artesão ou cliente, dependendo da conta que possui.
 
-A imagem a seguir ilustra a o fluxo do usuário em nossa solução. Assim
-que o usuário entra na plataforma, ele é apresentado à tela inicial de login lá o usuário tem a possibilidade de criar uma nova conta, cadastrando uma conta de cliente ou artesão, ou a opção de logar sendo redirecionado para a home page do artesão ou cliente dependendo da conta que foi criada.
+Iniciando pela visão do cliente - comprador. A _homepage_ do cliente é a principal página da plataforma, redirecionando o usuário para todas as demais páginas funcionais. Nela, o usuário pode solicitar alterção dos dados cadastrais. Ao digitar uma palavra chave no campo de pesquisa, é exibido para ele uma lista de produtos relativos a busca efetuada, além de um menu lateral com a funcionalidade de filtrar os produtos por material, categorias e faixa etária a que se destinam. Esses dados de produtos estarão disponíveis em repositório local de cadastro de produtos.
 
-A home page do cliente é a principal página da plataforma para o cliente, redirecionando o usuário para todas as páginas funcionais, ao digitar uma palavra chave no campo de pesquisa o é exibido para o usuário uma lista de produtos relativos a busca efetuada, na página de pesquisa o usuário tem a funcionalidade de filtrar os produtos por categorias.
+Da homepage ou da página de buscas realizadas ele pode clicar em um produto específico para obter mais informações sobre o mesmo. O repositório local de registro de produtos será acessado nessa busca. Caso se interesse por um produto ele pode adicioná-lo ao carrinho de compras que poderá ser consultado e fechado realizando a compra através da tela de pagamento que se abrirá. Para essa funcionalidade o repositório local de registro de usuário será acessado. Ele também pode optar a ser redirecionado para o seu histórico de compras anteriores onde poderá avaliar os produtos que já foram comprados. Ambos os repositórios locais de comentários e de históricos serão acessados para essas funcionalidades.
 
-Caso ele opte por seguir pelo primeiro caminho (Editar Perfil), ele é
-redirecionado para a tela de edição de perfil (Tela 2), onde pode
-atualizar seus dados cadastrais. Nessa tela, o usuário também pode
-escolher para editar sua foto de perfil. Ao selecionar essa opção, ele é
-redirecionado para a Tela 3, onde ele a imagem expandida do perfil do
-usuário é mostrado. Ao selecionar a opção para atualizar a imagem, uma
-nova janela abre pedindo para o usuário fazer o upload da nova foto.
-Assim que o processo termina um pop-up exibe o status para o usuário
-(Tela 4) e o usuário é redirecionado para a Tela 2.
+Seguindo pela visão do artesão, o mesmo encontrará em sua homepage os produtos cadastrados que serão passíveis de alteração de preço, estoque, inclusão e exclusão. Atividades estas que requisitarão o armazenamento local de registro de produtos. De lá, o artesão poderá optar por exibir a sua agenda pessoal (repositório local de histórico contemplará as datas de venda e entrega previstas), ou visualizar as vendas realizadas e estatísticas de desempenho.
 
-Caso o usuário opte seguir pelo segundo caminho (Visualizar Galeria) ele
-é redirecionado para a Tela 5 com todas as fotos que o usuário possui. O
-usuário pode clicar em um post qualquer para visualizar os detalhes do
-post (Tela 6). Nessa tela, ele pode então escolher editar o post, sendo
-redirecionado para a Tela 7. Ao editar as informações, o usuário pode
-escolher salvar ou deletar o post. Em ambos os casos o status é
-notificado para o usuário (Tela 8) e em seguida ele é redirecionado
-para a Tela 2.
-
-![Exemplo de UserFlow](img/Fluxo%20de%20usu%C3%A1rio.png)
-
+Para visualização gráfica dos possíveis casos de uso ponta a ponta, retornar à imagem 1 presente na documentação "Projeto de Interface"
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+As tecnologias escolhidas para o desenvolvimento são
+Linguagens de Programação a serem utilizadas: HTML, JS, CSS
+Frameworks: Figma
+IDEs de desenvolvimento: Visual Studio Code
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
 
-## Hospedagem
-
-Explique como a hospedagem e o lançamento da plataforma foi feita.
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+# ??? Não tinhamos colocado isso
+## Caso ele opte por seguir pelo primeiro caminho (Editar Perfil), ele é redirecionado para a tela de edição de perfil (Tela 2), onde também pode atualizar seus dados cadastrais e editar sua foto de perfil. Ao selecionar essa opção, ele é redirecionado para a Tela 3, onde ele a imagem expandida do perfil do usuário é mostrado. Ao selecionar a opção para atualizar a imagem, uma nova janela se abre requisitando que ele faça o upload da nova foto. Assim que o processo termina um pop-up exibe o status para o usuário (Tela 4) e o usuário é redirecionado para a Tela 2.
+## Caso o usuário opte seguir pelo segundo caminho (Visualizar Galeria) ele é redirecionado para a Tela 5 com todas as fotos que o usuário possui. O usuário pode clicar em um post qualquer para visualizar os detalhes do post (Tela 6). Nessa tela, ele pode então escolher editar o post, sendo redirecionado para a Tela 7. Ao editar as informações, o usuário pode escolher salvar ou deletar o post. Em ambos os casos o status é notificado para o usuário (Tela 8) e em seguida ele é redirecionado para a Tela 2.
