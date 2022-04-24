@@ -154,6 +154,12 @@ A janela de chat (Figura 16) possui 3 botões, o de minimizar e o de fechar a ja
 Fonte: dos autores.
 
 ### Alteração de Dados Cadastrais
+
+A tela de alteração de dados cadastrais apresenta campos digitáveis para modificação das informações previamente definidas.
+O usuário pode confirmar as alterações através do botão “Alterar” como também pode desistir e clicar no botão de “Cancelar”.
+A tela é padrão tanto para o artesão quanto para o cliente.
+
+![Alteração de dados](Alteração_de_dados.png)
+
 ##### Figura 17: Tela para alteração de dados cadastrais
-![Alterar dados cadastrais]()
 Fonte: dos autores
