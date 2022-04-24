@@ -36,10 +36,7 @@ Para visualização gráfica dos possíveis casos de uso ponta a ponta, retornar
 As tecnologias escolhidas para o desenvolvimento são
 Linguagens de Programação a serem utilizadas: HTML, JS, CSS
 Frameworks: Figma
-IDEs de desenvolvimento: Visual Studio Code
+IDEs de desenvolvimento: Visual Studio Code.
 
 
 
-# ??? Não tinhamos colocado isso
-## Caso ele opte por seguir pelo primeiro caminho (Editar Perfil), ele é redirecionado para a tela de edição de perfil (Tela 2), onde também pode atualizar seus dados cadastrais e editar sua foto de perfil. Ao selecionar essa opção, ele é redirecionado para a Tela 3, onde ele a imagem expandida do perfil do usuário é mostrado. Ao selecionar a opção para atualizar a imagem, uma nova janela se abre requisitando que ele faça o upload da nova foto. Assim que o processo termina um pop-up exibe o status para o usuário (Tela 4) e o usuário é redirecionado para a Tela 2.
-## Caso o usuário opte seguir pelo segundo caminho (Visualizar Galeria) ele é redirecionado para a Tela 5 com todas as fotos que o usuário possui. O usuário pode clicar em um post qualquer para visualizar os detalhes do post (Tela 6). Nessa tela, ele pode então escolher editar o post, sendo redirecionado para a Tela 7. Ao editar as informações, o usuário pode escolher salvar ou deletar o post. Em ambos os casos o status é notificado para o usuário (Tela 8) e em seguida ele é redirecionado para a Tela 2.
