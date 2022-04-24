@@ -16,26 +16,11 @@ Os ambientes de trabalhos adotados pela equipe são diversos sendo adotados de a
 
 ## Controle de Versão
 
-A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-foi utilizado para hospedagem do repositório.
+A ferramenta de controle de versão adotada no projeto foi o Git, sendo que o Github foi utilizado para hospedagem do repositório.
+Na primeira etapa não foi utilizado o controle de versão e todas as alterações foram efetuadas na branch principal.
+A partir da segunda etapa, o projeto seguirá a convenção descrita na imagem:
 
-O projeto segue a seguinte convenção para o nome de branches:
-
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
-
-Quanto à gerência de issues, o projeto adota a seguinte convenção para
-etiquetas:
-
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
-
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
+![Controle de Versão](Controle_de_versão.png)
 
 > **Links Úteis**:
 > - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
