@@ -159,7 +159,8 @@ A tela de alteração de dados cadastrais apresenta campos digitáveis para modi
 O usuário pode confirmar as alterações através do botão “Alterar” como também pode desistir e clicar no botão de “Cancelar”.
 A tela é padrão tanto para o artesão quanto para o cliente.
 
+##### Figura 17: Tela para alteração de dados cadastrais
+
 ![Alteração de dados](Alteração_de_dados.png)
 
-##### Figura 17: Tela para alteração de dados cadastrais
 Fonte: dos autores
