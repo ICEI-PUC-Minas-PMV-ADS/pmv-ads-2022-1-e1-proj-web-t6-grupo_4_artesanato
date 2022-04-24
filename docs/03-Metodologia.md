@@ -64,21 +64,32 @@ A Figura X é um _ScreenShot_ da tela em que o método _Kanban_ é aplicado dent
 
 Ainda dentro do processo do SCRUM, o planejamento da _Sprint_ é feita semanalmente em reunião realizada no através do _Teams_, a comunicação diária (_Daily_) é feita por aplicativo de mensagens (_WhatsApp_), e a revisão da Sprint também é feita semanalmente através do _Teams_. Além disso, semanalmente temos a oportunidade de realizar a revisão da _Sprint_ em reuniões com a professora Nathália.
 
-### Ferramentas
+## Ferramentas 
 
-As ferramentas empregadas no projeto são:
-
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
-
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
  
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/
+ 
+
+As ferramentas empregadas no projeto são: 
+
+ 
+ 
+
+### Editor de código: 
+
+ Para edição de código vai ser utilizado o Visual studio, para a implementação da documentação do projeto foi utilizado o Github e a ferramenta de edição de texto Visual Studio code por ser uma ferramenta que possui várias funcionalidades que ajudam e facilitam a produção. 
+
+  
+
+### Ferramentas de comunicação:  
+
+ As ferramentas de comunicação utilizadas no projeto foram o Microsoft Teams para a realização de reuniões e encontros para definição de formas de trabalho e o whatsapp para uma interação mais rápida focando em pequenas decisões ou duvidas.  
+
+### Ferramentas de desenho de tela (_wireframing_):  
+
+Para a criação do wireframe e fluxo do usuário foi utilizado a ferramenta figma, uma ferramenta ágil e de fácil entendimento e utilização foi compartilhado o conteúdo no próprio site de forma em que todos os integrantes do grupo puderam contribuir com o resultado final.  
+
+Para criação do diagrama de componentes foi utiliado a ferramenta do whimsical, uma ferramenta simples, mas que atende bem a necessidade do grupo. 
+
+Para o gerenciamento e tomada de decisões foi utilizado as funcionalidades e ferramentas do Github browser. 
+ 
+
