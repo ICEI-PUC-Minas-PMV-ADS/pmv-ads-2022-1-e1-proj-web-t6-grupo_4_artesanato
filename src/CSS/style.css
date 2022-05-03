@@ -1,0 +1,10 @@
+.titulosTexto{
+ background-color:#d87256;
+ color: #55190d;
+ font-family: 'Times New Roman';
+}
+body{
+    background-image: url(../imgs/fundosite.png);
+    background-repeat: no-repeat;
+
+}
