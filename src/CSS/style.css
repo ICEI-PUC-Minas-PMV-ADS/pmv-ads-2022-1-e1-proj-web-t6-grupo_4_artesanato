@@ -2,15 +2,24 @@
  background-color:#d87256;
  color: #55190d;
  font-family: 'Times New Roman';
+ font-size: large;
+}
+#logotexto{
+ background-color:#d87256;
+ color: #55190d;
+ font-family: 'Times New Roman';
+ font-size: 30pt;
+ padding: none;
+ margin: none;
 }
 body{
     background-image: url(../imgs/fundosite.png);
     background-repeat: no-repeat;
 
 }
-.bordas {
+.bordas{
     border-color: #55190d;
     border-radius: 2%;
-    border-width: 2px;
-    
+    border-style:double;    
+
 }
