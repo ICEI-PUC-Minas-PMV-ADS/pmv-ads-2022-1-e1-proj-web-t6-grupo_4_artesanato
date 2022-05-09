@@ -8,3 +8,9 @@ body{
     background-repeat: no-repeat;
 
 }
+.bordas {
+    border-color: #55190d;
+    border-radius: 2%;
+    border-width: 2px;
+    
+}
