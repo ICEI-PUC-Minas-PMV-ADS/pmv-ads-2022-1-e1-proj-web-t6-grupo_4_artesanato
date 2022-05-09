@@ -10,29 +10,66 @@
 </head>
 <body class="vw-100 vh-100 fundo">
     <div class="container-fluid d-flex flex-column h-100">
-        <header class="titulosTexto d-flex align-items-center" > <!--Essa Div é o Cabeçalho --> 
-            <a class="navbar-brand d-flex flex-column align-items-center" style="height: auto;" href="#"><!--Esse Link é o Logo mais o Título -->
+        <!-- Cabeçalho da Página -->
+        <header class="d-flex titulosTexto align-items-center" > 
+            <a class="d-flex navbar-brand flex-column align-items-center" style="height: auto;" href="#"><!--Esse Link é o Logo mais o Título -->
                 <img src="/imgs/logo.jpg" alt="" class="d-inline-block align-text-top " style="width: 200px;" >
                 <span class="titulosTexto"> Artesanato </span>
             </a>
-            <div class = "flex-fill d-flex justify-content-end"><!--Essa Div contém o conteudo do cabeçalho -->
+        
+            <div class = "d-flex flex-fill justify-content-end"><!--Essa Div contém o conteudo do cabeçalho -->
                 <!-- TODO: Essa div vai conter alguns dados do cliente e outras informações do cabeçalho -->
                 <h1>Bem vindo ao Site,</h1>
                 <p>Senhor Henrique Alexandre.</p>
             </div>
-        </header>
 
-        <nav class="navbar navbar-light bg-light">
-            <form class="container-fluid justify-content-start">
-                <button class="btn btn-outline-success me-2" type="button">Main button</button> <!-- Botoes para alteração-->
-                <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button> <!-- Botoes para alteração-->
-            </form>
-        </nav>
+        </header>
+        <!-- Barra de navegação -->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        
         
         <div class="flex-fill d-flex ">
-            <div class="bg-danger w-25 h-100">
-                Teste <!-- Barra lateral configurada a 25% do tamanho da página-->
-            </div>
+            <!--Barra Lateral do Site -->
+            <aside class="bg-danger w-25 h-100">
+                Teste 
+            </aside>
+            <!-- Conteúdo do Site-->
             <div class="flex-fill ">
                 Teste2 <!-- Dentro dessa Div vai o conteúdo do site-->
             </div>
