@@ -12,10 +12,10 @@
  padding: none;
  margin: none;
 }
-.bodyy{
-    background-image: url(../imgs/fundosite.png);
+body{
+    background-image: url(../imgs/bgsite.png);
     background-repeat: no-repeat;
-
+    background-size: auto;
 }
 .bordas{
     border-color: #55190d;
@@ -23,4 +23,16 @@
     border-style:double; 
     padding: none;   
 
+}
+.preco{
+    color: black;
+    font-style: oblique;
+    font-size: larger;
+}
+.imgsize {
+    border-radius: 8px;
+    width: auto;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
