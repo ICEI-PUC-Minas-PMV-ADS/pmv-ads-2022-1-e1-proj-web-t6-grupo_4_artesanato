@@ -1,0 +1,45 @@
+.titulosTexto{
+ background-color:#d87256;
+ color: #55190d;
+ font-family: 'Times New Roman';
+ font-size: large;
+}
+#logotexto{
+ background-color:#d87256;
+ color: #55190d;
+ font-family: 'Times New Roman';
+ font-size: 30pt;
+ padding: none;
+ margin: none;
+}
+body{
+    background-image: url(../imgs/bgsite.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.bordas{
+    border-color: #55190d;
+    border-radius: 2%;
+    border-style:double; 
+    padding: none;   
+
+}
+.preco{
+    color: black;
+    font-style: oblique;
+    font-size: larger;
+}
+.imgsize {
+    border-radius: 8px;
+    width: auto;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (max-width: 767px) 
+{
+    aside {
+
+        height: 20% !important;
+    }
+}
