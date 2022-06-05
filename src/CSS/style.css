@@ -38,6 +38,20 @@ body{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+#compras-recentes {
+    background-color: rgb(205, 236, 26);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    max-width: 900px;
+    max-height: 20px;
+}
+#container-produtos {
+    background-color: green;
+    max-width: 900px;
+    float: right;
+}
+
+
+
 @media screen and (max-width: 767px) 
 {
     aside {
