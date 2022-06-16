@@ -52,3 +52,35 @@ body{
 p,h1,h2,h3,h4,h5,h6{
     font-family: 'Times New Roman';
 }
+
+/*Estilo do Chat*/
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: 5px;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+    border-radius: 10px;
+  }
+  .form-container .cancel {
+    border-color: red;
+    background-color: #f0b5a4;
+
+  }
+  .form-container .send {
+    border-color: green;
+    background-color:aquamarine;
+  }
+  .chat-popup {
+    display: none;
+    z-index: 9;
+  }
+/*Fim do estulo do chat*/ 

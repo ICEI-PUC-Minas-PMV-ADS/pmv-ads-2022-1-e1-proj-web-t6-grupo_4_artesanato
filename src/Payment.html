@@ -62,15 +62,10 @@
                             <a class="nav-link active" href="#">Contato </a>
                         </li>
                     </ul>
-                    <!--Ícone para o chat-->
-                    <div class="float-end">
-                        <a class="navbar-brand" href="Chat.js">
-                            <img src="imgs/Logo_chat.png" alt="ícone para o chat" width="auto" height="26">
-                        </a>
-                    </div>
+                
                     <!-- Carrinho de Compras -->
                     <div class="d-inline-block">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="trolley.html">
                             <img src="imgs/carrinho compras.png" alt="" width="35" height="26">
                         </a>
                     </div>
@@ -83,6 +78,25 @@
                     </form>
                 </div>
             </div>
+
+            <!--Ícone para o chat-->
+            <script>
+                function openForm() { document.getElementById("myForm").style.display = "block"; }
+                function closeForm() { document.getElementById("myForm").style.display = "none"; }
+            </script>
+            <div class="float-end">
+                <button class="open-button" onclick="openForm()"><img src="imgs/Logo_chat.png" id=icone_chat
+                        alt="ícone para o chat" width="auto" height="26"></button>
+                <div class="chat-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <!---Não compreendo essa action_page.php-->
+                        <textarea placeholder="Digite sua mensagem aqui" name="msg" required></textarea>
+                        <button type="submit" class="btn send">Enviar</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+                    </form>
+                </div>
+            </div>
+            <!--Fim do ícone para o chat-->
         </nav>
 
         <!--Corpo do site-->
@@ -168,7 +182,7 @@
             <!-- Conteúdo do Site -->
             <div class="col-md">
                 <aside class="bordas titulosTexto m-2">
-                    
+
                     <div class="card mb">
                         <div class="row g-0">
                             <div class="col-md" style="margin:0.5in">
@@ -309,15 +323,15 @@
                                         <option value="1">PIX</option>
                                         <option value="2">Cartão de crédito</option>
                                         <option value="3">Boleto Bancário</option>
-                                      </select>
+                                    </select>
                                 </form>
                                 <p>Você receberá as informações de pagamento no e-mail cadastrado</p>
+                            </div>
                         </div>
                     </div>
+                </aside>
             </div>
-            </aside>
         </div>
-    </div>
     </div>
 
 
