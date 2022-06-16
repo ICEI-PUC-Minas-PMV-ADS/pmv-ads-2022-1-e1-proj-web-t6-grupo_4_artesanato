@@ -2,12 +2,12 @@ import { BaseRepository } from "../Repository.js";
 
 /***
  * UserRepository
- * Classe responsavel por manipular os dados dos jogos.
+ * Classe responsavel por manipular dados do usuário
  */
 
- export class UserRepository extends Repository {
+ export class UserARepository extends BaseRepository {
     constructor() {
-      super("user");
+      super("userA");
     }
   
     serialize(data) {
