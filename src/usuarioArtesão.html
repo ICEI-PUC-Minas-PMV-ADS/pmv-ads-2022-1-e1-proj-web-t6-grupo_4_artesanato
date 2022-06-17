@@ -151,37 +151,10 @@
 
             <!-- coluna de Mensagens-->
             <div class = "col-md-3 m-1 bg-light "> 
-              <h1>Coluna de Mensagens <br></h1>
+              <h1>Coluna de Eventos <br></h1>
               <li class="dropdown-divider"></li>
 
-              <!--Inicio Toasts -->
-              <div class="toast-container">
-                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true"  >
-                  <div class="toast-header">
-                    <img src="..." class="rounded me-2" alt="...">
-                    <strong class="me-auto">Bootstrap</strong>
-                    <small class="text-muted">just now</small>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                  </div>
-                  <div class="toast-body">
-                    Nova mensagem do cliente.
-                  </div>
-                </div>
-              
-                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                  <div class="toast-header">
-                    <img src="..." class="rounded me-2" alt="...">
-                    <strong class="me-auto">Bootstrap</strong>
-                    <small class="text-muted">2 seconds ago</small>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                  </div>
-                  <div class="toast-body">
-                    Heads up, toasts will stack automatically
-                  </div>
-                </div>
-              </div>
-              <!--Fim Toasts -->
-            
+                     
             </div>
             <!-- fim coluna de Mensagens -->
 
@@ -210,13 +183,6 @@
     </div>
 
         
-    <script> 
-      window.onload = (event) => {
-        let myAlert = document.querySelector('.toast');
-        let bsAlert = new bootstrap.Toast(myAlert);
-        bsAlert.show();
-      }
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
