@@ -37,6 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       });
       alert(" Usuario  Cadastrado com sucesso!!!!!! ")
-      window.location.reload();
+      window.location.replace("http://127.0.0.1:5500/telaLogin.html")
+      
+      
    })
 });
