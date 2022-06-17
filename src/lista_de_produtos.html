@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imgs/loco_icone.ico" type="image/x-icon">
+  <title>Projeto Artesanato</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="/js/Produtos/exibirProdutos.js" type="module"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+</head>
+
+<body class="vw-100 vh-100" onload="listarProdutos()">
+  <div class="container-fluid d-flex flex-column h-100">
+    <!-- Cabeçalho da Página -->
+    <header class="bordas d-flex titulosTexto align-items-center">
+      <a class="d-flex navbar-brand flex-column align-items-center m-1" style="height: auto;" href="#">
+        <!--Esse Link é o Logo mais o Título -->
+        <img src="imgs/Logot.png" alt="" class="d-inline-block align-text-top " style="width: 150px; height: auto;">
+        <h1 id="logotexto"> A-nós </h1>
+      </a>
+
+      <div class="d-flex flex-fill justify-content-end m-2">
+        <!--Essa Div contém o conteudo do cabeçalho -->
+        <!-- TODO: Essa div vai conter alguns dados do cliente e outras informações do cabeçalho -->
+        <h1>Bem vindo ao Site,</h1>
+        <p>Senhor Henrique Alexandre.</p>
+      </div>
+    </header>
+    <!-- Fim do Cabeçalho -->
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light mb-3">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex me-auto mb-2 mb-lg-0 ">
+            <!--  -->
+            <!-- Menu Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categorias de Produtos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Materiais</a></li>
+                <li><a class="dropdown-item" href="#">Categorias</a></li>
+                <li><a class="dropdown-item" href="#">Faixa Etária</a></li>
+              </ul>
+            </li>
+            <!-- Final do menu Drop Down -->
+            <li class="ms-4 nav-item">
+              <a class="nav-link active" aria-current="page" href="#"> Alterar conta </a>
+            </li>
+            <li class="ms-4 nav-item">
+              <a class="nav-link active" href="#">Contato </a>
+            </li>
+          </ul>
+
+          <!-- Carrinho de Compras -->
+          <div class="d-inline-block">
+            <a class="navbar-brand" href="trolley.html">
+              <img src="imgs/carrinho compras.png" alt="" width="35" height="26">
+            </a>
+          </div>
+
+          <!-- Formulario de busca -->
+          <form class="d-flex " style="width:500px;">
+            <input class="form-control me-2" type="search" placeholder="Digite o nome do Produto " aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+      <!--Ícone para o chat-->
+      <script>
+        function openForm() { document.getElementById("myForm").style.display = "block"; }
+        function closeForm() { document.getElementById("myForm").style.display = "none"; }
+      </script>
+      <div class="float-end">
+        <button class="open-button" onclick="openForm()"><img src="imgs/Logo_chat.png" id=icone_chat
+            alt="ícone para o chat" width="auto" height="26"></button>
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <!---Não compreendo essa action_page.php-->
+            <textarea placeholder="Digite sua mensagem aqui" name="msg" required></textarea>
+            <button type="submit" class="btn send">Enviar</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+          </form>
+        </div>
+      </div>
+      <!--Fim do ícone para o chat-->
+    </nav>
+
+
+    <!--Conteúdo do site-->
+     <!--Lista de Produtos  -->
+     <div class= "col-md-9 m-1" >
+      <h1>Lista de Produtos cadastrados </h1>
+      <li class="dropdown-divider"></li>
+      <div class= "col-md-9 m-1" id="produto" >
+        
+        <!--
+          Lista de Produtos
+        -->
+      </div>       
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

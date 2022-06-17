@@ -1,6 +1,6 @@
 import {ProductRepository} from "../repositories/ProductRepository.js"
 
-let Product_rep = new ProductRepository();
+let product_rep = new ProductRepository();
 
 //evento que busca informações no formulario e cria um objeto Usuário Artesão.
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let faixaEtaria = _faixaEtaria.value;
      
 
-      Product_rep.create({
+      product_rep.create({
 
          nome: nome,
          descricao: descricao,
