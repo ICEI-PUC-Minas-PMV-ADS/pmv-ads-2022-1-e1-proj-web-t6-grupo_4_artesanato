@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let nEvento = nomeEvento.value
       let dEvento = descricaoEvento.value
       event_rep.create({
+        
          data: dateInt,
          nome: nEvento,
          descricao: dEvento,

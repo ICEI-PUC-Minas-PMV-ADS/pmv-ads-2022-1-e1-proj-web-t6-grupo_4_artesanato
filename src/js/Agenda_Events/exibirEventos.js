@@ -39,7 +39,6 @@ window.exibirEventos = function exibirEventos() {
     reduce
     find
     */
- 
     const eventos_elementos = eventos.map((evento) => createEventCard(evento));
     const eventos_container = document.getElementById('eventos');
     eventos_container.replaceChildren(...eventos_elementos);
