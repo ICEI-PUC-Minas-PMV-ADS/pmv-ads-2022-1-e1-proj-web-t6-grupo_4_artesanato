@@ -133,7 +133,7 @@
                     <div class="d-flex justify-content-start">
                       <a class="navbar-brand" href="http://127.0.0.1:5500/UA_Cadastrar_eventos.html#" id="cadastroEventos" >
                         <img src="imgs/Favoritos.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                         cadastrar Eventos
+                         Cadastrar <br>Eventos
                       </a>
                     </div>
                   </nav>
@@ -202,117 +202,88 @@
                               
                               <!---Inserir Classificação do Produto-->
                               <div><label>Classifique o seu produto conforme os ítens abaixo:</label>
-                              <h5>1. Material</h5>
-                                <fieldset class="form-group row">  
-                                  <div class="col-sm-10">
-                                    <!--   Precisa de correção   -->
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="radio" name="gridRadios" id="material" value="madeira" checked>
-                                      <label class="form-check-label" style="font-family: Times New Roman" for="material">
-                                        Madeira
-                                      </label>
+
+                                <form style = "font-family: 'Times New Roman';">
+                                  <fieldset>
+                                  <legend> Material </legend>
+                                    <div>
+                                      <input type = "checkbox" id = "material" value = "Madeira">
+                                      <label for = "Madeira"> Madeira </label>
                                     </div>
-
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="radio" name="gridRadios" id="categoria" value="plastico">
-                                      <label class="form-check-label" style="font-family: Times New Roman" for="categoria">
-                                        Plástico
-                                      </label>
+                                    <div>
+                                      <input type = "checkbox" id = "material" value = "Plástico">
+                                      <label for = "Plástico"> Plástico </label>
                                     </div>
-
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="radio" name="gridRadios" id="faixaetaria" value="pano">
-                                      <label class="form-check-label" style="font-family: Times New Roman" for="faixaetaria">
-                                        Pano
-                                      </label>
+                                    <div>
+                                      <input type = "checkbox" id = "material" value = "Pano">
+                                      <label for = "Pano"> Pano </label>
                                     </div>
-
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="radio" name="gridRadios" id="outro" value="outro">
-                                      <label class="form-check-label" style="font-family: Times New Roman" for="outro">
-                                        Outro
-                                      </label>
+                                    <div>
+                                      <input type = "checkbox" id = "material" value = "Outro">
+                                      <label for = "Outro"> Outro </label>
                                     </div>
-
-                                  </div>
-                                </fieldset>
-
-                              <h5 style="margin-top:10px;">Categorias</h5>
-                                <fieldset class="form-group row">
-                                  <div class="col-sm-10">
-
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="radio" name="gridRadios" id="moveis" value="moveis" checked>
-                                      <label class="form-check-label" style="font-family: Times New Roman" for="moveis">
-                                        Móveis
-                                      </label>
+                                    <div>
+                                      <button type="button" class="col-4 btn btn-outline-secondary btn-sm m-4 " id="btnCadastrarMaterial">Cadastrar Material</button>
                                     </div>
-
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="radio" name="gridRadios" id="brinquedo" value="brinquedo">
-                                      <label class="form-check-label" style="font-family: Times New Roman" for="brinquedo">
-                                        Brinquedo
-                                      </label>
+                                  </fieldset>
+                                </form>
+                  
+                                <form style = "font-family: 'Times New Roman';">
+                                  <fieldset>
+                                  <legend> Categoria </legend>
+                                    <div>
+                                      <input type = "checkbox" id = "categoria" value = "Móvel">
+                                      <label for = "Móvel"> Móveis </label>
                                     </div>
-
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="radio" name="gridRadios" id="croche" value="croche">
-                                      <label class="form-check-label" style="font-family: Times New Roman" for="croche">
-                                        Crochê
-                                      </label>
+                                    <div>
+                                      <input type = "checkbox" id = "categoria" value = "Brinquedo">
+                                      <label for = "Brinquedo"> Brinquedo </label>
                                     </div>
-
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="radio" name="gridRadios" id="bordados" value="bordados">
-                                      <label class="form-check-label" style="font-family: Times New Roman" for="bordados">
-                                        Bordados
-                                      </label>
+                                    <div>
+                                      <input type = "checkbox" id = "categoria" value = "Crochê">
+                                      <label for = "Crochê"> Crochê </label>
                                     </div>
-
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="radio" name="gridRadios" id="reciclados" value="reciclados">
-                                      <label class="form-check-label" style="font-family: Times New Roman" for="reciclados">
-                                        Reciclados
-                                      </label>
+                                    <div>
+                                      <input type = "checkbox" id = "categoria" value = "Bordado">
+                                      <label for = "Bordado"> Bordado </label>
                                     </div>
-
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="radio" name="gridRadios" id="feltro" value="feltro">
-                                      <label class="form-check-label" style="font-family: Times New Roman" for="feltro">
-                                        Feltro
-                                      </label>
+                                    <div>
+                                      <input type = "checkbox" id = "categoria" value = "Reciclado">
+                                      <label for = "Reciclado"> Reciclado </label>
                                     </div>
-
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="radio" name="gridRadios" id="outros" value="outros">
-                                      <label class="form-check-label" style="font-family: Times New Roman" for="outros">
-                                        Outros
-                                      </label>
+                                    <div>
+                                      <input type = "checkbox" id = "categoria" value = "Feltro">
+                                      <label for = "Feltro"> Feltro </label>
                                     </div>
-
-                                  </div>
-                                </fieldset>
-                                <h5 style="margin-top:10px;">Faixa etária</h5>
-                                <fieldset class="form-group row">
-                                  <div class="col-sm-10">
-
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="radio" name="gridRadios" id="infantil" value="infantil" checked>
-                                      <label class="form-check-label" style="font-family: Times New Roman" for="infantil">
-                                        Infantil
-                                      </label>
+                                    <div>
+                                      <input type = "checkbox" id = "categoria" value = "Outro">
+                                      <label for = "Outro"> Outro </label>
                                     </div>
-
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="radio" name="gridRadios" id="adulto" value="option2">
-                                      <label class="form-check-label" style="font-family: Times New Roman" for="adulto">
-                                        Adulto
-                                      </label>
+                                    <div>
+                                      <button type="button" class="col-4 btn btn-outline-secondary btn-sm m-4 " id="btnCadastrarCategoria">Cadastrar Categoria</button>
                                     </div>
+                                  </fieldset>
+                                </form>
+                  
+                                <form style = "font-family: 'Times New Roman';">
+                                  <fieldset>
+                                  <legend> Faixa etária </legend>
+                                    <div>
+                                      <input type = "checkbox" id = "faixaetaria" value = "Infantil">
+                                      <label for = "Infantil"> Infantil </label>
+                                    </div>
+                                    <div>
+                                      <input type = "checkbox" id = "faixaetaria" value = "Adulto">
+                                      <label for = "Adulto"> Adulto </label>
+                                    </div>
+                                    <div>
+                                      <button type="button" class="col-4 btn btn-outline-secondary btn-sm m-4 " id="btnCadastrarFaixaEtária">Cadastrar Faixa Etária</button>
+                                    </div>
+                                  </fieldset>
+                                </form>
 
-                                  </div>
-                                </fieldset>
-                                <button type="button" class="col-4 btn btn-secondary btn-lg m-4 " id="btnCadastrar"> Cadastrar </button>
+                                <button type="button" class="col-4 btn btn-secondary btn-lg m-4 " id="btnCadastrar"> Cadastrar Produto </button>
+
                               </div>  
                     </div>
                 </div> 

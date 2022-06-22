@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
          nome: nome,
          descricao: descricao,
          estoque: estoque,
-         material: '',
-         categoria: '',
-         faixaEtaria: '',
+         material: material,
+         categoria: categoria,
+         faixaEtaria: faixaEtaria,
          img: "",
         
       });
