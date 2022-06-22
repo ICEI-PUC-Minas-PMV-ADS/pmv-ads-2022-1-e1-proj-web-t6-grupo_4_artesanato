@@ -60,9 +60,10 @@
               <a class="nav-link active" href="#">Contato </a>
             </li>
           </ul>
+
           <!-- Carrinho de Compras -->
           <div class="d-inline-block">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="trolley.html">
               <img src="imgs/carrinho compras.png" alt="" width="35" height="26">
             </a>
           </div>
@@ -74,6 +75,25 @@
           </form>
         </div>
       </div>
+
+      <!--Ícone para o chat-->
+      <script>
+        function openForm() { document.getElementById("myForm").style.display = "block"; }
+        function closeForm() { document.getElementById("myForm").style.display = "none"; }
+      </script>
+      <div class="float-end">
+        <button class="open-button" onclick="openForm()"><img src="imgs/Logo_chat.png" id=icone_chat
+            alt="ícone para o chat" width="auto" height="26"></button>
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <!---Não compreendo essa action_page.php-->
+            <textarea placeholder="Digite sua mensagem aqui" name="msg" required></textarea>
+            <button type="submit" class="btn send">Enviar</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+          </form>
+        </div>
+      </div>
+      <!--Fim do ícone para o chat-->
     </nav>
 
     <!--Corpo do site-->
@@ -157,49 +177,57 @@
           <!--Card do Produto-->
           <div class="card mb-2">
             <div class="row g-0" style="margin:0.5in">
-                <!-- Editar informações dos cards nesta parte -->
-                <div class="col-md">
-                  <h5 class="card-title">Raposa </h5>
-                  <div class="d-flex flex-row mb-2">
-                    <div class="p-2">
-                      <img src="imgs/raposa 1.jpeg" style="height: 300px; width: 300px;" alt="...">
-                    </div>
-                    <div class="p-2">
-                      <p class="card-text"> Raposa com 30% de altura (quando em pé) feita em crochê, ultilizando linha 100% algodão e enchimento de poliéster siliconado. Produto macio e antialérgico. Pode ter as cores personalizadas de acordo com o gosto do cliente (entre em contato com o vendedor) ou seguir as cores do Cruzeiro Esporte Clube e receber o brasão do time na camisa.</p>
-                      <p class="card-text preco">  R$ 160,00 / un  </p> 
-                      <!--Seleciona a quantidade de ítens: Deve mudar de acordo com o estoque-->
-                      <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                        <option selected>Quantidade:</option>
-                        <option value="1"> 1 unidade </option>
-                        <option value="2"> 2 unidades </option>
-                        <option value="3"> 3 unidades </option>
-                      </select>
-                    </div>
-
+              <!-- Editar informações dos cards nesta parte -->
+              <div class="col-md">
+                <h5 class="card-title">Raposa </h5>
+                <div class="d-flex flex-row mb-2">
+                  <div class="p-2">
+                    <img src="imgs/raposa 1.jpeg" style="height: 300px; width: 300px;" alt="...">
                   </div>
-                  <h5 class="card-title"> Vaquinha </h5>
-                  <div class="d-flex flex-row mb-2">
-                    <div class="p-2">
-                      <img src="imgs/vaquinha.jpeg" style="height: 300px; width: 300px;" alt="...">
-                    </div>
-                    <div class="p-2">
-                      <p class="card-text"> Vaquinha tecida na técnica amigurumi em linha 100% algodão e enchimento de poliéster siliconado. Produto com 30cm de altura e antialérgico. Os olhos possuem trava de segurança e o vestido pode ser feito na cor desejada (entre em contato com o vendedor para informar a cor desejada)</p>
-                      <p class="card-text preco">  R$ 180,00 / un  </p> 
-                      <!--Seleciona a quantidade de ítens: Deve mudar de acordo com o estoque-->
-                      <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                        <option selected>Quantidade:</option>
-                        <option value="1"> 1 unidade </option>
-                        <option value="2"> 2 unidades </option>
-                        <option value="3"> 3 unidades </option>
-                      </select>
-                    </div>
-
+                  <div class="p-2">
+                    <p class="card-text"> Raposa com 30% de altura (quando em pé) feita em crochê, ultilizando linha
+                      100% algodão e enchimento de poliéster siliconado. Produto macio e antialérgico. Pode ter as cores
+                      personalizadas de acordo com o gosto do cliente (entre em contato com o vendedor) ou seguir as
+                      cores do Cruzeiro Esporte Clube e receber o brasão do time na camisa.</p>
+                    <p class="card-text preco"> R$ 160,00 / un </p>
+                    <!--Seleciona a quantidade de ítens: Deve mudar de acordo com o estoque-->
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                      <option selected>Quantidade:</option>
+                      <option value="1"> 1 unidade </option>
+                      <option value="2"> 2 unidades </option>
+                      <option value="3"> 3 unidades </option>
+                    </select>
                   </div>
+
                 </div>
+                <h5 class="card-title"> Vaquinha </h5>
+                <div class="d-flex flex-row mb-2">
+                  <div class="p-2">
+                    <img src="imgs/vaquinha.jpeg" style="height: 300px; width: 300px;" alt="...">
+                  </div>
+                  <div class="p-2">
+                    <p class="card-text"> Vaquinha tecida na técnica amigurumi em linha 100% algodão e enchimento de
+                      poliéster siliconado. Produto com 30cm de altura e antialérgico. Os olhos possuem trava de
+                      segurança e o vestido pode ser feito na cor desejada (entre em contato com o vendedor para
+                      informar a cor desejada)</p>
+                    <p class="card-text preco"> R$ 180,00 / un </p>
+                    <!--Seleciona a quantidade de ítens: Deve mudar de acordo com o estoque-->
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                      <option selected>Quantidade:</option>
+                      <option value="1"> 1 unidade </option>
+                      <option value="2"> 2 unidades </option>
+                      <option value="3"> 3 unidades </option>
+                    </select>
+                  </div>
+
+                </div>
+              </div>
               <!--Seleciona o valor da compra do ítem: Deve mudar de acordo com a quantidade de unidades selecionada pelo cliente-->
               <p class="card-text preco"> <br>Valor total da compra R$ 160,00 <br>
-              <footer><sub>(Esse e-commerce objetiva fortalecer o mercado artesanal local, por isso oo frete é grátis para região Sudeste. Para demais regiões, favor contactar o vendedor antes de concluir a compra)</sub></footer>
-              <button type="button" class="btn btn-lg"><a href = "Payment.html">Concluir a compra</a></button>
+              <footer><sub>(Esse e-commerce objetiva fortalecer o mercado artesanal local, por isso oo frete é grátis
+                  para região Sudeste. Para demais regiões, favor contactar o vendedor antes de concluir a compra)</sub>
+              </footer>
+              <button type="button" class="btn btn-lg"><a href="Payment.html">Concluir a compra</a></button>
             </div>
           </div>
       </div>

@@ -62,9 +62,10 @@
                             <a class="nav-link active" href="#">Contato </a>
                         </li>
                     </ul>
+                    
                     <!-- Carrinho de Compras -->
                     <div class="d-inline-block">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="trolley.html">
                             <img src="imgs/carrinho compras.png" alt="" width="35" height="26">
                         </a>
                     </div>
@@ -77,6 +78,25 @@
                     </form>
                 </div>
             </div>
+
+            <!--Ícone para o chat-->
+            <script>
+                function openForm() { document.getElementById("myForm").style.display = "block"; }
+                function closeForm() { document.getElementById("myForm").style.display = "none"; }
+            </script>
+            <div class="float-end">
+                <button class="open-button" onclick="openForm()"><img src="imgs/Logo_chat.png" id=icone_chat
+                        alt="ícone para o chat" width="auto" height="26"></button>
+                <div class="chat-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <!---Não compreendo essa action_page.php-->
+                        <textarea placeholder="Digite sua mensagem aqui" name="msg" required></textarea>
+                        <button type="submit" class="btn send">Enviar</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+                    </form>
+                </div>
+            </div>
+            <!--Fim do ícone para o chat-->
         </nav>
 
         <!--Corpo do site-->
@@ -162,68 +182,64 @@
             <!-- Conteúdo do Site -->
             <div class="col-md">
                 <aside class="bordas titulosTexto m-2">
-                    
+
                     <div class="card mb">
-                            <div class="col-12" style="margin:0.5in">
-                                
-                                <!--Inserir Nome do produto (20 caracteres)-->
-                                <label for="inputProductName"
-                                 class="form-label">Nome do produto</label>
-                                <input type="text" class="form-control" id="inputProductName"
-                                    placeholder="Digite o nome do seu produto aqui, máximo 20 caracteres.">
-                                
-                                <!--Inserir Descrição breve (40caracteres) do produto-->
-                                <label for="inputProductShortDescription"
-                                 class="form-label"><br>Descrição resumida do produto</label>
-                                <input type="text" class="form-control" id="inputProductShortDescription"
-                                    placeholder="Digite uma breve descrição do seu produto aqui, máximo de 40 caracteres.">
+                        <div class="col-12" style="margin:0.5in">
 
-                                <!--Inserir Descrição detalhada do produto (200 caracteres)-->
-                                <label for="inputProductLongDescription"
-                                 class="form-label"><br>Descrição detalhada do produto</label>
-                                <input type="text" class="form-control" id="inputProductLongDescription"
-                                    placeholder="Digite a descrição detalhada do seu produto aqui: dimensões, material, etc. Máximo 200 caracteres">
-                                
-                                <!--Inserir Estoque disponível ou 0 para encomenda-->
-                                 <label for="inputProductStorage"
-                                 class="form-label"><br>Quantas unidades disponíveis</label>
-                                <input type="number" class="form-control" id="inputProductStorage"
-                                    placeholder="Em caso de produto somente sob encomenda digite 0 (zero)">
+                            <!--Inserir Nome do produto (20 caracteres)-->
+                            <label for="inputProductName" class="form-label">Nome do produto</label>
+                            <input type="text" class="form-control" id="inputProductName"
+                                placeholder="Digite o nome do seu produto aqui, máximo 20 caracteres.">
 
-                                <!--Inserir WhatsApp do SAC-->
-                                <label for="inputWhatsAppp"
-                                class="form-label"><br>WhatsApp de contato</label>
-                                <input type="number" class="form-control"
-                                id="inputWhatsAppp"
-                                    placeholder="WhatsApp válido do SAC (XX) XXXXX - XXXX">
-                                
-                                <!--Inserir WhatsApp do SAC-->
-                                <label for="inputEmail"
-                                class="form-label"><br>E-mail de contato</label>
-                                <input type="number" class="form-control"
-                                id="inputEmail"
-                                    placeholder="E-mail válido do SAC">
-                                
-                                <!--Inserir Imagens - até 3-->
-                                <label for="inputImages"
-                                class="input-group"><br>Insira Imagens do Produto</label>
-                                
-                                <input type="file" class="form-control" id="inputImage1" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                                <button class="btn btn-outline-secondary" type="button" 
+                            <!--Inserir Descrição breve (40caracteres) do produto-->
+                            <label for="inputProductShortDescription" class="form-label"><br>Descrição resumida do
+                                produto</label>
+                            <input type="text" class="form-control" id="inputProductShortDescription"
+                                placeholder="Digite uma breve descrição do seu produto aqui, máximo de 40 caracteres.">
+
+                            <!--Inserir Descrição detalhada do produto (200 caracteres)-->
+                            <label for="inputProductLongDescription" class="form-label"><br>Descrição detalhada do
+                                produto</label>
+                            <input type="text" class="form-control" id="inputProductLongDescription"
+                                placeholder="Digite a descrição detalhada do seu produto aqui: dimensões, material, etc. Máximo 200 caracteres">
+
+                            <!--Inserir Estoque disponível ou 0 para encomenda-->
+                            <label for="inputProductStorage" class="form-label"><br>Quantas unidades disponíveis</label>
+                            <input type="number" class="form-control" id="inputProductStorage"
+                                placeholder="Em caso de produto somente sob encomenda digite 0 (zero)">
+
+                            <!--Inserir WhatsApp do SAC-->
+                            <label for="inputWhatsAppp" class="form-label"><br>WhatsApp de contato</label>
+                            <input type="number" class="form-control" id="inputWhatsAppp"
+                                placeholder="WhatsApp válido do SAC (XX) XXXXX - XXXX">
+
+                            <!--Inserir WhatsApp do SAC-->
+                            <label for="inputEmail" class="form-label"><br>E-mail de contato</label>
+                            <input type="number" class="form-control" id="inputEmail"
+                                placeholder="E-mail válido do SAC">
+
+                            <!--Inserir Imagens - até 3-->
+                            <label for="inputImages" class="input-group"><br>Insira Imagens do Produto</label>
+
+                            <input type="file" class="form-control" id="inputImage1"
+                                aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            <button class="btn btn-outline-secondary" type="button"
                                 id="inputGroupFileAddon04">Enviar</button>
-                                
-                                <input type="file" class="form-control" 
-                                id="inputImage2" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                                <button class="btn btn-outline-secondary" type="button" 
+
+                            <input type="file" class="form-control" id="inputImage2"
+                                aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            <button class="btn btn-outline-secondary" type="button"
                                 id="inputGroupFileAddon04">Enviar</button>
-                                
-                                <input type="file" class="form-control" 
-                                id="inputImage3" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                                <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Enviar</button>
-                            </div>   
+
+                            <input type="file" class="form-control" id="inputImage3"
+                                aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            <button class="btn btn-outline-secondary" type="button"
+                                id="inputGroupFileAddon04">Enviar</button>
+                        </div>
                     </div>
-                 </aside>
+                </aside>
             </div>
+            <!--fim -->
         </div>
     </div>
     </div>

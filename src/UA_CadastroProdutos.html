@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/loco_icone.ico" type="image/x-icon">
+    <title>Projeto Artesanato</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="js/Agenda_Events/exibirEventos.js" type="module"></script>
+</head>
+<body class="vw-100 vh-100" onload="exibirEventos()" >
+    <div class="container-fluid d-flex flex-column h-100">
+
+        <!-- Cabeçalho da Página -->
+        <header class="bordas d-flex titulosTexto align-items-center" > 
+            <a class="d-flex navbar-brand flex-column align-items-center m-1" style="height: auto;" href="http://127.0.0.1:5500/usuarioArtes%C3%A3o.html#"><!--Esse Link é o Logo mais o Título -->
+                <img src="imgs/Logot.png" alt="" class="d-inline-block align-text-top " style="width: 150px; height: auto;" >
+                <h1 id="logotexto"> A-nós </h1>
+            </a>
+        
+            <div class = "d-flex flex-fill justify-content-end m-2"><!--Essa Div contém o conteudo do cabeçalho -->
+                <!-- TODO: Essa div vai conter alguns dados do cliente e outras informações do cabeçalho -->
+                <h1 >Conta do Artesão,</h1>
+                <p>Senhor Henrique Alexandre.</p>
+            </div>
+        </header>
+        <!-- Fim do Cabeçalho -->
+
+        <!-- Barra de navegação -->
+        <nav class="navbar navbar-expand-lg navbar-light mb-3">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex me-auto mb-2 mb-lg-0 "> <!--  -->
+                    <!-- Menu Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Produtos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="http://127.0.0.1:5500/UA_CadastroProdutos.html">Cadastrar Produtos</a></li>
+                          <li><a class="dropdown-item" href="#">Consultar Produtos </a></li>
+                          <li><a class="dropdown-item" href="#">Alterar Produtos </a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Agendar Produto</a></li>
+                        </ul>
+                    </li>
+                    <!-- Final do menu Drop Down -->
+                  <li class="ms-4 nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"> Contatos </a>
+                  </li>
+                  <li class="ms-4 nav-item">
+                    <a class="nav-link active" href="#" > Métodos de Pagamento</a>
+                  </li>
+                  <li class="ms-4 nav-item">
+                    <a class="nav-link active" href="#" > Editar Perfil </a>
+                  </li>
+
+                </ul>
+                <!-- Calendario de Compras -->
+                <div class="d-inline-block m-1">
+                    <a class="navbar-brand" href="http://127.0.0.1:5500/UA_calendario.html" >
+                      <img src="imgs/agenda.png" alt="" width="60" height="55">
+                    </a>
+        
+                </div>
+              </div>
+            </div>
+          </nav>
+        <!-- Fim da Barra de Navegação-->
+
+        <!--Corpo do site-->
+        <div id="corpo_site" class="row">
+            
+            <!--Barra Lateral do Site -->
+            <aside class="bordas col-md-2 titulosTexto m-1  ">
+              
+              <!-- Links da Lateral -->
+              <ul class="nav flex-column ">
+                <li class="nav-item">
+
+                  <!--Link Home-->
+                  <nav class="navbar navbar-light bg-none">
+                    <div class="d-flex justify-content-start">
+                      <a class="navbar-brand" href="#" id="home">
+                        <img src="imgs/homep.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                         Home
+                      </a>
+                    </div>
+                  </nav>
+                  
+                </li>
+
+                <li class="nav-item">
+                  <!-- Link historico-->
+                  <nav class="navbar navbar-light bg-none">
+                    <div class="d-flex justify-content-start">
+                      <a class="navbar-brand" href="#" id="historico">
+                        <img src="imgs/Historico.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                         Histórico
+                      </a>
+                    </div>
+                  </nav>
+                </li>
+                <li class="nav-item">
+
+                 <!-- Link compras-->
+                 <nav class="navbar navbar-light bg-none">
+                    <div class="d-flex justify-content-start">
+                      <a class="navbar-brand" href="#" id="vendas">
+                        <img src="imgs/Sacola.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                         Minhas</br>Vendas
+                      </a>
+                    </div>
+                  </nav>
+                </li>
+                
+                <li class="nav-item">
+                  <!-- Link Favoritos -->
+                  <nav class="navbar navbar-light bg-none">
+                    <div class="d-flex justify-content-start">
+                      <a class="navbar-brand" href="http://127.0.0.1:5500/UA_Cadastrar_eventos.html#" id="cadastroEventos" >
+                        <img src="imgs/Favoritos.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                         cadastrar Eventos
+                      </a>
+                    </div>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                    <!-- Link Favoritos -->
+                    <nav class="navbar navbar-light bg-none">
+                      <div class="d-flex justify-content-start">
+                        <a class="navbar-brand" href="#">
+                          <img src="imgs/notificações.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                           Avisos
+                        </a>
+                      </div>
+                    </nav>
+                  </li>
+
+              </ul>
+              <!-- Fim da Barra Lateral -->
+            </aside>
+            <!-- Fim da da barra Lateral -->
+
+            
+           <!-- Conteúdo do Site -->
+           <div class="col-md">
+            <aside class="bordas titulosTexto m-2">
+                
+                <div class="card mb">
+                        <div class="col-11" style="margin:0.5in">
+                            
+                            <!--Inserir Nome do produto (20 caracteres)-->
+                            <label for="inputProductName"
+                             class="form-label">Nome do produto</label>
+                            <input type="text" class="form-control" id="inputProductName"
+                                placeholder="Digite o nome do seu produto aqui, máximo 20 caracteres.">
+                            
+                            <!--Inserir Descrição breve (40caracteres) do produto-->
+                            <label for="inputProductShortDescription"
+                             class="form-label"><br>Descrição resumida do produto</label>
+                            <input type="text" class="form-control" id="inputProductShortDescription"
+                                placeholder="Digite uma breve descrição do seu produto aqui, máximo de 40 caracteres.">
+
+                            <!--Inserir Descrição detalhada do produto (200 caracteres)-->
+                            <label for="inputProductLongDescription"
+                             class="form-label"><br>Descrição detalhada do produto</label>
+                            <input type="text" class="form-control" id="inputProductLongDescription"
+                                placeholder="Digite a descrição detalhada do seu produto aqui: dimensões, material, etc. Máximo 200 caracteres">
+                            
+                            <!--Inserir Estoque disponível ou 0 para encomenda-->
+                             <label for="inputProductStorage"
+                             class="form-label"><br>Quantas unidades disponíveis</label>
+                            <input type="number" class="form-control" id="inputProductStorage"
+                                placeholder="Em caso de produto somente sob encomenda digite 0 (zero)">
+
+                            <!--Inserir WhatsApp do SAC-->
+                            <label for="inputWhatsAppp"
+                            class="form-label"><br>WhatsApp de contato</label>
+                            <input type="number" class="form-control"
+                            id="inputWhatsAppp"
+                                placeholder="WhatsApp válido do SAC (XX) XXXXX - XXXX">
+                            
+                            <!--Inserir WhatsApp do SAC-->
+                            <label for="inputEmail"
+                            class="form-label"><br>E-mail de contato</label>
+                            <input type="number" class="form-control"
+                            id="inputEmail"
+                                placeholder="E-mail válido do SAC">
+                            
+                            <!--Inserir Imagens - até 3-->
+                            <label for="inputImages"
+                            class="input-group"><br>Insira Imagens do Produto</label>
+                            
+                            <input type="file" class="form-control" id="inputImage1" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            <button class="btn btn-outline-secondary" type="button" 
+                            id="inputGroupFileAddon04">Enviar</button>
+                            
+                            <input type="file" class="form-control" 
+                            id="inputImage2" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            <button class="btn btn-outline-secondary" type="button" 
+                            id="inputGroupFileAddon04">Enviar</button>
+                            
+                            <input type="file" class="form-control" 
+                            id="inputImage3" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Enviar</button>
+                            
+                            <!---Inserir Classificação do Produto-->
+                            <div><label>Classifique o seu produto conforme os ítens abaixo:</label>
+                            <h5>1. Material</h5>
+                              <fieldset class="form-group row">
+                                <div class="col-sm-10">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" style="font-family: Times New Roman" for="gridRadios1">
+                                      Madeira
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" style="font-family: Times New Roman" for="gridRadios2">
+                                      Plástico
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                    <label class="form-check-label" style="font-family: Times New Roman" for="gridRadios3">
+                                      Pano
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" style="font-family: Times New Roman" for="gridRadios2">
+                                      Outro
+                                    </label>
+                                  </div>
+                                </div>
+                              </fieldset>
+                            <h5 style="margin-top:10px;">Categorias</h5>
+                              <fieldset class="form-group row">
+                                <div class="col-sm-10">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" style="font-family: Times New Roman" for="gridRadios1">
+                                      Móveis
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" style="font-family: Times New Roman" for="gridRadios2">
+                                      Brinquedo
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                    <label class="form-check-label" style="font-family: Times New Roman" for="gridRadios3">
+                                      Crochê
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                    <label class="form-check-label" style="font-family: Times New Roman" for="gridRadios3">
+                                      Bordados
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                    <label class="form-check-label" style="font-family: Times New Roman" for="gridRadios3">
+                                      Reciclados
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                    <label class="form-check-label" style="font-family: Times New Roman" for="gridRadios3">
+                                      Feltro
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                    <label class="form-check-label" style="font-family: Times New Roman" for="gridRadios3">
+                                      Outros
+                                    </label>
+                                  </div>
+                                </div>
+                              </fieldset>
+                              <h5 style="margin-top:10px;">Faixa etária</h5>
+                              <fieldset class="form-group row">
+                                <div class="col-sm-10">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" style="font-family: Times New Roman" for="gridRadios1">
+                                      Infantil
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" style="font-family: Times New Roman" for="gridRadios2">
+                                      Adulto
+                                    </label>
+                                  </div>
+                                </div>
+                              </fieldset>
+                              </div>  
+                          </div>
+                        </div>   
+                </div>
+             </aside>
+        </div>
+        <!--fim -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
