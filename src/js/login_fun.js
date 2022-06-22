@@ -13,8 +13,7 @@ document.addEventListener ('DOMContentLoaded', () =>{
         if (usuario) {
            
             login(usuario);
-            debugger;
-            window.location.href = "usuarioArtesão.html";
+            window.location.href = "http://127.0.0.1:5500/usuarioArtesao.html";
         } else {
             alert ('Usuário ou senha invalido!');
             
