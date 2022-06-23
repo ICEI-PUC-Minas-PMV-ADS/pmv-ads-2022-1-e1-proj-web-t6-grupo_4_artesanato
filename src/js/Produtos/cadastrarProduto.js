@@ -6,15 +6,17 @@ let product_rep = new ProductRepository();
 //evento que busca informações no formulario e cria um objeto Usuário Artesão.
 document.addEventListener('DOMContentLoaded', () => {
 
-   let btncadastrar = document.getElementById('btnCadastrar'); 
+   let btncadastrar = document.getElementById('btnCadastrar')
    btncadastrar.addEventListener ('click',function (){
    
-      let nome  = document.getElementById('nome').value;
-      let descricao = document.getElementById('descricao').value;
-      let estoque = document.getElementById ('estoque').value;
-      let material = document.getElementById('material').value;
-      let categoria = document.getElementById('categoria').value;
-      let faixaEtaria = document.getElementById('faixaetaria').value;
+      let nome  = document.getElementById('nome').value
+      let descricao = document.getElementById('descricao').value
+      let estoque = document.getElementById ('estoque').value
+      let material = document.getElementById('material').value
+      let categoria = document.getElementById('categoria').value
+      let faixaEtaria = document.getElementById('faixaetaria').value
+      let preco = document.getElementById('preco').value
+      let img = document.getElementById('foto').value
       let user = getUser()
       product_rep.create({
 
@@ -24,8 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
          material: material,
          categoria: categoria,
          faixaEtaria: faixaEtaria,
-         img: "",
+         img: img,
          ower_id: user.id,
+         preco: preco,
         
       });
       

@@ -8,21 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
    let btncadastrar = document.getElementById('btnCadastrar'); 
    btncadastrar.addEventListener ('click',function (){
    
-      let _nome  = document.getElementById('inputCraftsmanName');
-      let _email = document.getElementById('inputCraftsmanEmail');
-      let _sobre = document.getElementById ('inputAbout');
-      let _senha = document.getElementById('inputCraftsmanPass');
-      let _endereco = document.getElementById('inputAddress');
-      let _whats = document.getElementById('inputWhatsApp');
-      let _img = document.getElementById('inputImgPerf')
+      let nome  = document.getElementById('inputCraftsmanName').value
+      let email = document.getElementById('inputCraftsmanEmail').value
+      let sobre = document.getElementById ('inputAbout').value
+      let senha = document.getElementById('inputCraftsmanPass').value
+      let endereco = document.getElementById('inputAddress').value
+      let whats = document.getElementById('inputWhatsApp').value
+      let img = document.getElementById('inputImgPerf').value
 
-      let nome = _nome.value;
-      let email = _email.value;
-      let sobre = _sobre.value;
-      let senha = _senha.value;
-      let endereco = _endereco.value;
-      let whats = _whats.value;
-      let img = _img.value;
 
       userA_rep.create({
 
@@ -33,11 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
          endereco: endereco,
          whats: whats,
          img: img,
-         logado: false,
+        
 
       });
       alert(" Usuario  Cadastrado com sucesso!!!!!! ")
-      window.location.replace("http://127.0.0.1:5500/telaLogin.html")
+      window.location.replace("login_tela.html")
       
       
    })

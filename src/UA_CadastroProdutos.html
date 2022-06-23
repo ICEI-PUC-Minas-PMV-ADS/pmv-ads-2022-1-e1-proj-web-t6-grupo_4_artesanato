@@ -51,7 +51,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <li><a class="dropdown-item" href="UA_CadastroProdutos.html">Cadastrar Produtos</a></li>
-                          <li><a class="dropdown-item" href="#">Consultar Produtos </a></li>
+                          <li><a class="dropdown-item" href="lista_de_produtos">Consultar Produtos </a></li>
                           <li><a class="dropdown-item" href="#">Alterar Produtos </a></li>
                           <li><hr class="dropdown-divider"></li>
                           <li><a class="dropdown-item" href="#">Agendar Produto</a></li>
@@ -131,7 +131,7 @@
                   <!-- Link Favoritos -->
                   <nav class="navbar navbar-light bg-none">
                     <div class="d-flex justify-content-start">
-                      <a class="navbar-brand" href="http://127.0.0.1:5500/UA_Cadastrar_eventos.html#" id="cadastroEventos" >
+                      <a class="navbar-brand" href="UA_Cadastrar_eventos.html" id="cadastroEventos" >
                         <img src="imgs/Favoritos.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
                          Cadastrar <br>Eventos
                       </a>
@@ -182,6 +182,18 @@
                               <input type="number" class="form-control" id="estoque"
                                   placeholder="Em caso de produto somente sob encomenda digite 0 (zero)">
 
+                              <!-- Preço do produto-->
+                              <label for="preco"
+                              class="form-label"><br>Valor do Produto</label>
+                              <input type="number" class="form-control" id="preco"
+                                  placeholder="O preço do produto ">
+
+                                  <!-- Endereço da Foto-->
+                              <label for="foto"
+                              class="form-label"><br>Endereço da Foto </label>
+                              <input type="text" class="form-control" id="foto"
+                                  placeholder = "Endereço da Foto">
+                              
                                                       
                               <!--Inserir Imagens - até 3-->
                               <label for="inputImages"
