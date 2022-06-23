@@ -5,8 +5,11 @@ let product_rep = new ProductRepository();
 let user = getUser();
 
 window.listarProdutos = function listarProdutos() {
-    const Produtos = product_rep.getAll()
-    let Products = product_rep.getAll().find((u) => u.ower_id === user.id);
+    const Produtos = product_rep.getAll().map((u) => {
+      if (u.ower_id === user.id){
+         return u;
+      } else return undefined;
+   });
     const createEventCard = (produto) => {
        const el = document.createElement('div');
  
