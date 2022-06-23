@@ -1,4 +1,5 @@
 import {ProductRepository} from "../repositories/ProductRepository.js"
+import { getUser } from '../user.js';
 
 let product_rep = new ProductRepository();
 
@@ -14,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
       let material = document.getElementById('material').value;
       let categoria = document.getElementById('categoria').value;
       let faixaEtaria = document.getElementById('faixaetaria').value;
-
-
+      let user = getUser()
+      debugger
       product_rep.create({
 
          nome: nome,
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
          categoria: categoria,
          faixaEtaria: faixaEtaria,
          img: "",
+         ower_id :user.id,
         
       });
       
