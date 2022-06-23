@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
       let categoria = document.getElementById('categoria').value;
       let faixaEtaria = document.getElementById('faixaetaria').value;
       let user = getUser()
-      debugger
       product_rep.create({
 
          nome: nome,
@@ -26,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
          categoria: categoria,
          faixaEtaria: faixaEtaria,
          img: "",
-         ower_id :user.id,
+         ower_id: user.id,
         
       });
       

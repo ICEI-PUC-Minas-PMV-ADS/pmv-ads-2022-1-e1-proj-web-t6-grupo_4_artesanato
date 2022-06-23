@@ -1,4 +1,5 @@
 import { EventRepository } from '../repositories/EventRepository.js';
+import {getUser} from '../user.js';
 
 let event_rep = new EventRepository();
 
@@ -8,16 +9,16 @@ document.addEventListener('DOMContentLoaded', () => {
    
    btncadastrar.addEventListener ('click',function (){
    
-      let date  = document.getElementById('dataEvento');
-      let nomeEvento = document.getElementById('nomeEvento');
-      let descricaoEvento = document.getElementById ('descricaoEvento');
-      let dateInt = date.value
-      let nEvento = nomeEvento.value
-      let dEvento = descricaoEvento.value
+      let date  = document.getElementById('dataEvento').value
+      let nomeEvento = document.getElementById('nomeEvento').value
+      let descricaoEvento = document.getElementById ('descricaoEvento').value
+      const user = getUser()
+
       event_rep.create({
-         data: dateInt,
-         nome: nEvento,
-         descricao: dEvento,
+         data: date,
+         nome: nomeEvento,
+         descricao: descricaoEvento,
+         ower_id: user.id,
 
       });
       alert(" Evento Cadastrado com sucesso!!!!!! ")

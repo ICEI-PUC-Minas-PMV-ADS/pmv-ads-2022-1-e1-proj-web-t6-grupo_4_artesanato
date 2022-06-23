@@ -1,12 +1,10 @@
 import {ProductRepository} from "../repositories/ProductRepository.js"
-import {getUser} from '../user.js'
 
 let product_rep = new ProductRepository();
-let user = getUser();
 
 window.listarProdutos = function listarProdutos() {
-    const Produtos = product_rep.getAll()
-    let Products = product_rep.getAll().find((u) => u.ower_id === user.id);
+    const Produtos = product_rep.getAll();
+ 
     const createEventCard = (produto) => {
        const el = document.createElement('div');
  
@@ -41,7 +39,7 @@ window.listarProdutos = function listarProdutos() {
     reduce
     find
     */
-    
+ 
     const produtos_elementos = Produtos.map((produto) => createEventCard(produto));
     const produtos_container = document.getElementById('produto');
     produtos_container.replaceChildren(...produtos_elementos);
