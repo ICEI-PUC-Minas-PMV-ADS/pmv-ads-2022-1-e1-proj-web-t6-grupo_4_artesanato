@@ -66,12 +66,22 @@
                             <input type="number" class="form-control"
                             id="inputWhatsApp"placeholder="WhatsApp válido do SAC (XX) XXXXX - XXXX">
                             
-                            <!--Inserir Imagens - até 3-->
-                            <label for="inputImages"
-                            class="input-group"><br>Insira Imagem de Perfil</label>
-                            
-                            <input type="file" class="form-control" id="inputImage1" aria-describedby="inputImgPerf" aria-label="Upload">
-                            <button class="btn btn-outline-secondary" type="button" id="inputImgPerf" >Enviar</button>
+                            <!--Inserir Imagem-->
+                            <label for="image" class="form-label"><br> Link da Foto de Perfil </label>
+                            <input type="text" class="form-control" id="image"
+                                placeholder="Link da Foto Utilizada.">
+                            <!-- Escolha do tipo de usuario -->
+
+                            <div class="m-2">
+                              <label for="tipo" class="form-label"><br> Tipo de Conta </label>
+                                <select class="form-select" aria-label="Default select example" id="tipo">
+                                <option selected>Escolha o Tipo de Conta</option>
+                                <option value="artesao" >Artesão</option>
+                                <option value="cliente" >Cliente</option>
+                              </select>
+                            </div>
+                              
+
                         </div> 
 
                         <button type="button" class="col-4 btn btn-secondary btn-lg m-4 " id="btnCadastrar" onclick="" > Cadastrar </button>

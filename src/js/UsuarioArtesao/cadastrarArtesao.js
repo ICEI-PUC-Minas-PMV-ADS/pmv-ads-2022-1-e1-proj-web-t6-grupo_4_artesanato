@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
       let senha = document.getElementById('inputCraftsmanPass').value
       let endereco = document.getElementById('inputAddress').value
       let whats = document.getElementById('inputWhatsApp').value
-      let img = document.getElementById('inputImgPerf').value
+      let img = document.getElementById('image').value
+      let tipo = document.getElementById('tipo').value
 
 
       userA_rep.create({
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
          endereco: endereco,
          whats: whats,
          img: img,
+         tipo: tipo,
         
 
       });

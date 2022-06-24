@@ -5,10 +5,8 @@ let product_rep = new ProductRepository();
 let user = getUser();
 
 window.listarProdutos = function listarProdutos() {
-    const Produtos = product_rep.getAll().map((u) => {
-      if (u.ower_id === user.id){
-         return u;
-      } else return undefined;
+    const Produtos = product_rep.getAll().filter((u) => {
+     return u.ower_id === user.id
    });
     const createEventCard = (produto) => {
        const el = document.createElement('div');
@@ -28,10 +26,10 @@ window.listarProdutos = function listarProdutos() {
        botao_deletar.addEventListener('click', (evt) => {
           if (confirm("Você deseja deletar este Produto?"))
           {
-             product_rep.delete(produto.id);
-             window.location.reload();
+             product_rep.delete(produto.id)
+             window.location.reload()
           }
-       });
+       })
  
        return el; 
     }

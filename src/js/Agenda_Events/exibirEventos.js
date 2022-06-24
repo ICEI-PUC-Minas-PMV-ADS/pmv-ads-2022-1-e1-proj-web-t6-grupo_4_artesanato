@@ -7,10 +7,8 @@ let user = getUser()
 window.exibirEventos = function exibirEventos() {
     //const eventos = event_rep.getAll()
   
-   const eventos = event_rep.getAll().map((u) => {
-      if(u.ower_id === user.id){
-         return u
-      }else return undefined
+   const eventos = event_rep.getAll().filter((u) => {
+      return u.ower_id === user.id
     })
     
     const createEventCard = (evento) => {

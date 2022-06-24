@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
    let btncadastrar = document.getElementById('btnCadastrar')
    btncadastrar.addEventListener ('click',function (){
    
-      let nome  = document.getElementById('nome').value
+      let _nome  = document.getElementById('nome').value
       let descricao = document.getElementById('descricao').value
       let estoque = document.getElementById ('estoque').value
       let material = document.getElementById('material').value
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let user = getUser()
       product_rep.create({
 
-         nome: nome,
+         nome: _nome,
          descricao: descricao,
          estoque: estoque,
          material: material,

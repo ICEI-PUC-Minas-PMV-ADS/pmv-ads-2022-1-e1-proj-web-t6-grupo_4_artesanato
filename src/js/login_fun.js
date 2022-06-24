@@ -13,8 +13,18 @@ document.addEventListener ('DOMContentLoaded', () =>{
         
         if (usuario) {
            
-            login(usuario)
-            window.location.href = "usuarioArtesao.html";
+            if (usuario.tipo == 'cliente')
+            {
+                login(usuario)
+                window.location.href = "index.html"
+
+            }else {
+            
+                login(usuario)
+                window.location.href = "usuarioArtesao.html"
+
+            }
+            
 
         } else {
             
