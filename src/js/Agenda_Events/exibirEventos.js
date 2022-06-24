@@ -13,7 +13,6 @@ window.exibirEventos = function exibirEventos() {
       }else return undefined
     })
     
- 
     const createEventCard = (evento) => {
        const el = document.createElement('div');
  
