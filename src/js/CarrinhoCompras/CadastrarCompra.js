@@ -1,38 +1,34 @@
 import {CartRepository} from "../repositories/CartRepository.js"
-import { getUser } from '../user.js';
+import {ProductRepository} from '../repositories/ProductRepository.js'
+import { getUser } from '../user.js'
 
-let cart_rep = new CartRepository();
-
+let cart_rep = new CartRepository()
+let product_rep = new ProductRepository()
 //evento que busca informações no formulario e adiciona um objeto no carrinho
 document.addEventListener('DOMContentLoaded', () => {
 
    let btncadastrar = document.getElementById('btnCadastrar')
    btncadastrar.addEventListener ('click',function (){
    
-      let _nome  = document.getElementById('nome').value
+      let nome  = document.getElementById('nome').value
       let descricao = document.getElementById('descricao').value
       let estoque = document.getElementById ('estoque').value
-      let material = document.getElementById('material').value
-      let categoria = document.getElementById('categoria').value
-      let faixaEtaria = document.getElementById('faixaetaria').value
-      let preco = document.getElementById('preco').value
-      let img = document.getElementById('foto').value
+      let produto_id = document.getElementById('product_id').value
       let user = getUser()
-      product_rep.create({
+      cart_rep.create({
 
-         nome: _nome,
+         nome: nome,
          descricao: descricao,
          estoque: estoque,
-         material: material,
-         categoria: categoria,
-         faixaEtaria: faixaEtaria,
-         img: img,
-         ower_id: user.id,
          preco: preco,
+         ower_id: user.id,
+         product_id: produto_id,
+        
         
       });
-      
-      alert("Produto cadastrado com sucesso")
+
+        
+      alert("Produto Foi inserido no carrinho de compras!!!!")
       window.location.reload()
       
       // Falta Implementação Função não está funcional.

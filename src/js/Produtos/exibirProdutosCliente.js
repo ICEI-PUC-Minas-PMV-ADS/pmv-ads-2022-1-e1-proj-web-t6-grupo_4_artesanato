@@ -1,6 +1,9 @@
 import {ProductRepository} from "../repositories/ProductRepository.js"
+import {CartRepository} from "../repositories/CartRepository.js"
+import {getUser} from '../user.js'
 
-let product_rep = new ProductRepository();
+let cart_rep = new CartRepository()
+let product_rep = new ProductRepository()
 
 window.listarProdutos = function listarProdutos() {
     const Produtos = product_rep.getAll();
@@ -18,11 +21,12 @@ window.listarProdutos = function listarProdutos() {
          <div class="col-md-8">
            <div class="card-body">
              <!-- Editar informações dos cards nesta parte -->
-             <h5 class="card-title">${produto.nome}</h5>
-             <p class="card-text" style="text-align: justify;"> ${produto.descricao} </p>
+             <h5 class="card-title" id="nome">${produto.nome}</h5>
+             <p class="card-text" style="text-align: justify;" id="descricao"> ${produto.descricao} </p>
              <p class="card-text"><small class="text-muted">Qualtidade no Estoque: ${produto.estoque}  </small></p>
              <p class="card-text preco"> R$ : ${produto.preco} </p>
-             <a href="exibicao-produtos.html" button type="button" class="btn btn-success btn-md me-5"> Comprar </a>
+             <a href="#" button type="button" class="btn btn-success btn-md me-5"> Comprar </a>
+             <button class="btn btn-primary"> Comprar </button>
              <a href="avaliacao.html" button type="button" class="btn btn-secondary btn-md ms-3"> Avaliar </a>
              <!-- Editar Informações -->
            </div>
@@ -30,6 +34,38 @@ window.listarProdutos = function listarProdutos() {
        </div>
      </div>
        `;
+
+       const botao_comprar = el.querySelector('.btn.btn-primary');     
+       botao_comprar.addEventListener('click', (evt) => {
+              
+            let unidades = prompt("Quantas Unidades Voce deseja Comprar???")
+          /*
+            let nome  = document.getElementById('nome').value
+            let descricao = document.getElementById('descricao').value
+            let estoque = document.getElementById ('estoque').value
+            let produto_id = document.getElementById('product_id').value
+            */
+           
+            let user = getUser()
+            cart_rep.create({
+            
+            nome: nome,
+            descricao: descricao,
+            estoque: estoque,
+            compra_unidade: unidades,
+            preco: preco,
+            ower_id: user.id,
+            product_id: produto_id,
+        
+        
+            });
+
+        
+            alert("Produto Foi inserido no carrinho de compras!!!!")
+            window.location.reload()
+        
+          
+       })
  
  
        return el; 
