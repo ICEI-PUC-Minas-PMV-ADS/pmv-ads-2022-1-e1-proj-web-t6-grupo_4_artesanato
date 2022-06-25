@@ -21,72 +21,11 @@
 <body class="vw-100 vh-100">
     <div class="container-fluid d-flex flex-column h-100">
 
-        <!-- Cabeçalho da Página -->
-        <header class="bordas d-flex titulosTexto align-items-center" > 
-            <a class="d-flex navbar-brand flex-column align-items-center m-1" style="height: auto;" href="http://127.0.0.1:5500/usuarioArtes%C3%A3o.html#"><!--Esse Link é o Logo mais o Título -->
-                <img src="imgs/Logot.png" alt="" class="d-inline-block align-text-top " style="width: 150px; height: auto;" >
-                <h1 id="logotexto"> A-nós </h1>
-            </a>
         
-            <div class = "d-flex flex-fill justify-content-end m-2"><!--Essa Div contém o conteudo do cabeçalho -->
-                <!-- TODO: Essa div vai conter alguns dados do cliente e outras informações do cabeçalho -->
-                <h1 >Conta do Artesão,</h1>
-                <p>Senhor Henrique Alexandre.</p>
-            </div>
-        </header>
-        <!-- Fim do Cabeçalho -->
-
-        <!-- Barra de navegação -->
-        <nav class="navbar navbar-expand-lg navbar-light mb-3">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav d-flex me-auto mb-2 mb-lg-0 "> <!--  -->
-                    <!-- Menu Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Produtos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="http://127.0.0.1:5500/UA_CadastroProdutos.html">Cadastrar Produtos</a></li>
-                          <li><a class="dropdown-item" href="#">Consultar Produtos </a></li>
-                          <li><a class="dropdown-item" href="#">Alterar Produtos </a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Agendar Produto</a></li>
-                        </ul>
-                    </li>
-                    <!-- Final do menu Drop Down -->
-                  <li class="ms-4 nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"> Contatos </a>
-                  </li>
-                  <li class="ms-4 nav-item">
-                    <a class="nav-link active" href="#" > Métodos de Pagamento</a>
-                  </li>
-                  <li class="ms-4 nav-item">
-                    <a class="nav-link active" href="#" > Editar Perfil </a>
-                  </li>
-
-                </ul>
-                <!-- Calendario de Compras -->
-                <div class="d-inline-block m-1">
-                    <a class="navbar-brand" href="http://127.0.0.1:5500/UA_calendario.html" >
-                      <img src="imgs/agenda.png" alt="" width="60" height="55">
-                    </a>
-        
-                </div>
-              </div>
-            </div>
-          </nav>
-        <!-- Fim da Barra de Navegação-->
 
         <!--Corpo do site-->
         <div id="corpo_site" class="row">
-            
-          
-
-            
+                           
            <!-- Conteúdo do Site -->
            <div class="col-md">
             <aside class="bordas titulosTexto m-2">
@@ -127,12 +66,22 @@
                             <input type="number" class="form-control"
                             id="inputWhatsApp"placeholder="WhatsApp válido do SAC (XX) XXXXX - XXXX">
                             
-                            <!--Inserir Imagens - até 3-->
-                            <label for="inputImages"
-                            class="input-group"><br>Insira Imagem de Perfil</label>
-                            
-                            <input type="file" class="form-control" id="inputImage1" aria-describedby="inputImgPerf" aria-label="Upload">
-                            <button class="btn btn-outline-secondary" type="button" id="inputImgPerf" >Enviar</button>
+                            <!--Inserir Imagem-->
+                            <label for="image" class="form-label"><br> Link da Foto de Perfil </label>
+                            <input type="text" class="form-control" id="image"
+                                placeholder="Link da Foto Utilizada.">
+                            <!-- Escolha do tipo de usuario -->
+
+                            <div class="m-2">
+                              <label for="tipo" class="form-label"><br> Tipo de Conta </label>
+                                <select class="form-select" aria-label="Default select example" id="tipo">
+                                <option selected>Escolha o Tipo de Conta</option>
+                                <option value="artesao" >Artesão</option>
+                                <option value="cliente" >Cliente</option>
+                              </select>
+                            </div>
+                              
+
                         </div> 
 
                         <button type="button" class="col-4 btn btn-secondary btn-lg m-4 " id="btnCadastrar" onclick="" > Cadastrar </button>

@@ -1,30 +1,30 @@
 import { EventRepository } from '../repositories/EventRepository.js';
+import {getUser} from '../user.js';
 
 let event_rep = new EventRepository();
-
+const user = getUser()
 //evento que busca informações no formulario e cria um objeto da agenda.
 document.addEventListener('DOMContentLoaded', () => {
    let btncadastrar = document.getElementById('btnCadastrar');
    
-   btncadastrar.addEventListener ('click',function (){
-   
-      let date  = document.getElementById('dataEvento');
-      let nomeEvento = document.getElementById('nomeEvento');
-      let descricaoEvento = document.getElementById ('descricaoEvento');
-      let dateInt = date.value
-      let nEvento = nomeEvento.value
-      let dEvento = descricaoEvento.value
+   btncadastrar.addEventListener ('click', function (evt){
+      evt.preventDefault
+      let date  = document.getElementById('dataEvento').value
+      let nomeEvento = document.getElementById('nomeEvento').value
+      let descricaoEvento = document.getElementById ('descricaoEvento').value
+      
+
       event_rep.create({
-         data: dateInt,
-         nome: nEvento,
-         descricao: dEvento,
+         data: date,
+         nome: nomeEvento,
+         descricao: descricaoEvento,
+         ower_id: user.id,
 
       });
       alert(" Evento Cadastrado com sucesso!!!!!! ")
       
-      date.value = "";
-      nomeEvento.value = "";
-      descricaoEvento.value = "";
+      window.location.reload()
+      
 
    })
 });

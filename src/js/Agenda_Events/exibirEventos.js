@@ -1,10 +1,16 @@
 import { EventRepository } from "../repositories/EventRepository.js"
+import {getUser} from '../user.js'
 
-let event_rep = new EventRepository();
 
+let event_rep = new EventRepository()
+let user = getUser()
 window.exibirEventos = function exibirEventos() {
-    const eventos = event_rep.getAll();
- 
+    //const eventos = event_rep.getAll()
+  
+   const eventos = event_rep.getAll().filter((u) => {
+      return u.ower_id === user.id
+    })
+    
     const createEventCard = (evento) => {
        const el = document.createElement('div');
  
