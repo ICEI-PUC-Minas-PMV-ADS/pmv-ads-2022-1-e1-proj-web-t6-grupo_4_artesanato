@@ -22,8 +22,6 @@ window.listarProdutos = function listarProdutos() {
              <p class="card-text" style="text-align: justify;"> ${produto.descricao} </p>
              <p class="card-text"><small class="text-muted">Qualtidade no Estoque: ${produto.estoque}  </small></p>
              <p class="card-text preco"> R$ : ${produto.preco} </p>
-             <a href="exibicao-produtos.html" button type="button" class="btn btn-success btn-md me-5"> Comprar </a>
-             <a href="avaliacao.html" button type="button" class="btn btn-secondary btn-md ms-3"> Avaliar </a>
              <button class="btn btn-primary">Deletar Produto</button>
              <!-- Editar Informações -->
            </div>

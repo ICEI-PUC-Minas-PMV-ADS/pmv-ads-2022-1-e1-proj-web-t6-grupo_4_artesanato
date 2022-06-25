@@ -7,21 +7,12 @@ window.exibirCarrinho = () => {
     const cart = getCart();
     const prod_rep = new ProductRepository();
 
-
-    /**
-     * nome: produto.nome,
-              total_unidades: 0,
-              valor_total: 0,
-              ower_id: user.id,
-              products: [],
-     */
-
     if (cart !== null && cart !== undefined) {
 
         carrinhoCompras.innerHTML = `
             <div>
                 <div>
-                    <p>${getUser().nome}</p>
+                    <p><b>Usuário: </b> ${getUser().nome}</p>
                     <p>Total de Unidades: ${cart.total_unidades}</p>
                     <p>Valor total: R$ ${cart.valor_total.toFixed(2)}</p>
                 </div>
