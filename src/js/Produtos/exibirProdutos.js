@@ -12,14 +12,25 @@ window.listarProdutos = function listarProdutos() {
        const el = document.createElement('div');
  
        el.innerHTML = `
-          <div class="card mb-1">
-             <h5 class="card-header">${produto.nome}</h5>            
-             <div class="card-body">
-                <h5 class="card-title"> ${produto.descricao} </h5>
-                <p class="card-text">Quantidade em estoque: ${produto.estoque} </p>
-                <button class="btn btn-primary">Deletar Produto</button>
-             </div>
-          </div>
+       <div class="card mb-3" style="max-width: 900px;">
+       <div class="row g-0">
+         <div class="col-md-4">
+           <img src="${produto.img}" style="height: 300px; width: 300px;" class="imgsize img-fluid rounded-start"
+             alt="...">
+         </div>
+         <div class="col-md-8">
+           <div class="card-body">
+             <!-- Editar informações dos cards nesta parte -->
+             <h5 class="card-title">${produto.nome}</h5>
+             <p class="card-text" style="text-align: justify;"> ${produto.descricao} </p>
+             <p class="card-text"><small class="text-muted">Qualtidade no Estoque: ${produto.estoque}  </small></p>
+             <p class="card-text preco"> R$ : ${produto.preco} </p>
+             <button class="btn btn-primary">Deletar Produto</button>
+             <!-- Editar Informações -->
+           </div>
+         </div>
+       </div>
+     </div>
        `;
  
        const botao_deletar = el.querySelector('.btn.btn-primary');     

@@ -11,10 +11,11 @@ window.exibirCarrinho = () => {
 
         carrinhoCompras.innerHTML = `
             <div>
-                <div>
+                <div class="mb-3">
                     <p><b>Usuário: ${getUser().nome}</b></p>
                     <p><b>Total de Unidades:</b> ${cart.total_unidades}</p>
                     <p><b>Valor total: R$ ${cart.valor_total.toFixed(2)}</b></p>
+                    <button class="btn btn-secondary">Excluir Carrinho </button>
                 </div>
 
                 <ul>
@@ -33,7 +34,22 @@ window.exibirCarrinho = () => {
                 </ul>
             </div>
         `;
+
+
+        const botao_deletar = carrinhoCompras.querySelector('.btn.btn-primary');     
+        botao_deletar.addEventListener('click', (evt) => {
+          
+        if (confirm("Você deseja Excluir o Carrinho?"))
+          {
+             window.sessionStorage.removeItem(cart)
+             window.location.reload();
+          }
+        });
+
+
     } else {
         carrinhoCompras.innerHTML = "<h1>Não ha produtos a serem exibidos</h1>";
     }
+
+    
 }
