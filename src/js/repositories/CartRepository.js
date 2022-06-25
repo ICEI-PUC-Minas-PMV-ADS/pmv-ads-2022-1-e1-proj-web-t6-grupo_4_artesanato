@@ -1,4 +1,4 @@
-import { BaseRepository } from "..Repository.js";
+import { BaseRepository } from "../Repository.js";
 
 /***
  * 
