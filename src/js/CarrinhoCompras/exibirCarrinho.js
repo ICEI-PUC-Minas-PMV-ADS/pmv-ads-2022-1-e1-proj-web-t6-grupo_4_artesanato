@@ -1,4 +1,4 @@
-import { getCart } from "../cart.js";
+import { getCart, deleteCart } from "../cart.js";
 import { ProductRepository } from '../repositories/ProductRepository.js';
 import { getUser } from "../user.js";
 
@@ -35,21 +35,17 @@ window.exibirCarrinho = () => {
             </div>
         `;
 
-
-        const botao_deletar = carrinhoCompras.querySelector('.btn.btn-primary');     
-        botao_deletar.addEventListener('click', (evt) => {
-          
-        if (confirm("Você deseja Excluir o Carrinho?"))
-          {
-             window.sessionStorage.removeItem(cart)
-             window.location.reload();
-          }
-        });
+        const btn_delete = carrinhoCompras.querySelector('.btn.btn-secondary')
+        btn_delete.addEventListener('click', () => {
+                deleteCart()
+                window.location.reload()
+        })
 
 
     } else {
         carrinhoCompras.innerHTML = "<h1>Não ha produtos a serem exibidos</h1>";
     }
+
 
     
 }

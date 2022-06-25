@@ -2,7 +2,6 @@ import {UserARepository} from './repositories/UserArepository.js';
 import { getUser, isUser, login } from './user.js';
 
 const userA_rep = new UserARepository();
-
 document.addEventListener ('DOMContentLoaded', () =>{
     let btn = document.getElementById('btns')
     btn.addEventListener('click',function (evt) {

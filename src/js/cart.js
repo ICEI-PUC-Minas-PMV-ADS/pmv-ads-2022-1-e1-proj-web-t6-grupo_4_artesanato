@@ -26,6 +26,11 @@ export const saveCart = (cartData) => {
     window.sessionStorage.setItem(CART_KEY, JSON.stringify(cartData));    
 };
 
+export const deleteCart = () => {
+
+    window.sessionStorage.removeItem(CART_KEY)
+}
+
 /*
 user = { id: 1, nome: 'pedro', produto_id: 1 };
 
