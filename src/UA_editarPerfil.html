@@ -74,95 +74,59 @@
         <!--Corpo do site-->
         <div id="corpo_site" class="row">
             
-            <!--Barra Lateral do Site -->
-            <aside class="bordas col-md-2 titulosTexto m-1  ">
-              
-              <!-- Links da Lateral -->
-              <ul class="nav flex-column ">
-                <li class="nav-item">
-
-                  <!--Link Home-->
-                  <nav class="navbar navbar-light bg-none">
-                    <div class="d-flex justify-content-start">
-                      <a class="navbar-brand" href="#" id="home">
-                        <img src="imgs/homep.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                         Home
-                      </a>
-                    </div>
-                  </nav>
-                  
-                </li>
-
-                <li class="nav-item">
-                  <!-- Link historico-->
-                  <nav class="navbar navbar-light bg-none">
-                    <div class="d-flex justify-content-start">
-                      <a class="navbar-brand" href="#" id="historico">
-                        <img src="imgs/Historico.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                         Histórico
-                      </a>
-                    </div>
-                  </nav>
-                </li>
-                <li class="nav-item">
-
-                 <!-- Link compras-->
-                 <nav class="navbar navbar-light bg-none">
-                    <div class="d-flex justify-content-start">
-                      <a class="navbar-brand" href="#" id="vendas">
-                        <img src="imgs/Sacola.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                         Minhas</br>Vendas
-                      </a>
-                    </div>
-                  </nav>
-                </li>
+          <aside class="bordas titulosTexto m-2">
                 
-                <li class="nav-item">
-                  <!-- Link Favoritos -->
-                  <nav class="navbar navbar-light bg-none">
-                    <div class="d-flex justify-content-start">
-                      <a class="navbar-brand" href="UA_cadastrarEventos.html" id="cadastroEventos" >
-                        <img src="imgs/Favoritos.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                        Cadastrar <br>Eventos
-                      </a>
-                    </div>
-                  </nav>
-                </li>
+            <div class="card mb">
+                    <div class="col-12" style="margin:0.5in">
+                        
+                        <!--Inserir Nome do Usuario Artesão (20 caracteres)-->
+                        <label for="inputCraftsmanName" class="form-label" >Nome do Artesão </label>
+                        <input type="text" class="form-control" id="inputCraftsmanName"
+                            placeholder="Digite seu nome aqui, máximo 20 caracteres.">
+                           
+                        <!--Inserir E-mail do Usuario  Artesão(20 caracteres)-->
+                        <label for="inputCraftsmanEmail" class="form-label">E-mail </label>
+                        <input type="text" class="form-control" id="inputCraftsmanEmail"
+                          placeholder="Digite seu E-mail aqui, máximo 20 caracteres.">
 
-                <li class="nav-item">
-                    <!-- Link Favoritos -->
-                    <nav class="navbar navbar-light bg-none">
-                      <div class="d-flex justify-content-start">
-                        <a class="navbar-brand" href="#">
-                          <img src="imgs/notificações.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                           Avisos
-                        </a>
-                      </div>
-                    </nav>
-                  </li>
+                          <!--Inserir Senha do Usuario  Artesão(20 caracteres)-->
+                        <label for="inputCraftsmanPass" class="form-label">Senha </label>
+                        <input type="text" class="form-control" id="inputCraftsmanPass"
+                          placeholder="Digite sua Senha aqui, máximo 20 caracteres.">
 
-              </ul>
-              <!-- Fim da Barra Lateral -->
-            </aside>
-            <!-- Fim da da barra Lateral -->
+                        <!--Inserir Descrição breve do artesão (40caracteres)-->
+                        <label for="inputAbout"
+                          class="form-label"><br> Sobre o Artesão </label>
+                        <input type="text" class="form-control" id="inputAbout"
+                          placeholder="Digite uma breve descrição do seu trabalho, máximo de 40 caracteres.">
 
-            <!-- coluna de Mensagens-->
-            <div class = "col-md-3 m-1 bg-light "> 
-              <h1>Coluna de Eventos <br></h1>
-              <li class="dropdown-divider"></li>
+                        
+                        <!--Inserir Endereço da Loja do artesão (40caracteres)-->
+                        <label for="inputAddress" class="form-label"><br> Endereço da Loja </label>
+                        <input type="text" class="form-control" id="inputAddress"
+                            placeholder="Endereço da Loja, máximo de 40 caracteres.">
 
-                     
+                        <!--Inserir WhatsApp do SAC-->
+                        <label for="inputWhatsApp"
+                        class="form-label"><br>WhatsApp de contato</label>
+                        <input type="number" class="form-control"
+                        id="inputWhatsApp"placeholder="WhatsApp válido do SAC (XX) XXXXX - XXXX">
+                        
+                        <!--Inserir Imagem-->
+                        <label for="image" class="form-label"><br> Link da Foto de Perfil </label>
+                        <input type="text" class="form-control" id="image"
+                            placeholder="Link da Foto Utilizada.">
+                        <!-- Escolha do tipo de usuario -->
+
+                       
+                          
+
+                    </div> 
+
+                    <button type="button" class="col-4 btn btn-secondary btn-lg m-4 " id="btnCadastrar" onclick="" > Cadastrar </button>
+
             </div>
-            <!-- fim coluna de Mensagens -->
-
-            <!-- Novos Pedidos -->
-            <div class="col-md-6 m-1 bg-light ">
-              <h1>Coluna de Produtos </h1>
-              <li class="dropdown-divider"></li>
-                <div  id="produto"></div>
-            </div>
-            
-                   
+         </aside>
 
           </div>
     </div>
