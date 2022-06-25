@@ -12,9 +12,9 @@ window.exibirCarrinho = () => {
         carrinhoCompras.innerHTML = `
             <div>
                 <div>
-                    <p><b>Usuário: </b> ${getUser().nome}</p>
-                    <p>Total de Unidades: ${cart.total_unidades}</p>
-                    <p>Valor total: R$ ${cart.valor_total.toFixed(2)}</p>
+                    <p><b>Usuário: ${getUser().nome}</b></p>
+                    <p><b>Total de Unidades:</b> ${cart.total_unidades}</p>
+                    <p><b>Valor total: R$ ${cart.valor_total.toFixed(2)}</b></p>
                 </div>
 
                 <ul>
@@ -23,8 +23,8 @@ window.exibirCarrinho = () => {
 
                         return `
                             <li>
-                                <p>${product.nome}</p>
-                                <p>Preço unidade: R$ ${parseFloat(product.preco).toFixed(2)}</p>
+                                <p>Nome do Produto : ${product.nome}</p>
+                                <p>Preço da unidade: R$ ${parseFloat(product.preco).toFixed(2)}</p>
                                 <p>Numero de unidades: ${entry.quantidade}</p>
                                 <p>Valor total dos produtos: R$ ${(parseFloat(product.preco) * entry.quantidade).toFixed(2)}</p>
                             </li>
