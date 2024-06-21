@@ -1,0 +1,27 @@
+message: Please cite this software using these metadata.
+title: E-Commerce para artesões
+authors:
+  - family-names: Teixeira Félix
+    given-names:  Franciele
+  - family-names: Elias Coura
+    given-names: Giovanna Maria
+  - family-names: Gomes Pinto
+    given-names: Henrique Alexandre
+  - family-names: Araújo
+    given-names: Guilherme de Souza 
+  - family-names: Campos de Araújo
+    given-names: Juliane
+  - family-names: Gregorio
+    given-names: Thiago de Medeiros
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Valentim
+    given-names: Nathalia Assis Valentim
+   
+keywords:
+  - Artesãos
+  - Venda
+
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t6-grupo_4_artesanato
+version: 1.0.0
+date-released: 2022-05-15
